@@ -1,0 +1,65 @@
+{
+  "info": {
+    "logo": "/static/image/logo.gif",
+    "companyName": "企业名称企业名称企业名称"
+  },
+  "bannerItems": [
+    {
+      "id": 1,
+      "img": "/static/image/banner.jpg"
+    },
+    {
+      "id": 1,
+      "img": "/static/image/banner.jpg"
+    },
+    {
+      "id": 1,
+      "img": "/static/image/banner.jpg"
+    }
+  ],
+  "headlineItems": [
+    {
+      "id": 1,
+      "title": "动态标题动态标题1"
+    },
+    {
+      "id": 2,
+      "title": "动态标题动态标题2"
+    },
+    {
+      "id": 3,
+      "title": "动态标题动态标题3"
+    },
+    {
+      "id": 4,
+      "title": "动态标题动态标题4"
+    }
+  ],
+  "goodsItems": [
+
+    {
+      "id": 1,
+      "title": "产品标题产品标题1",
+      "img": "/static/image/goods.jpg",
+      "price": 888
+    },
+    {
+      "id": 2,
+      "title": "产品标题产品标题2",
+      "img": "/static/image/goods.jpg",
+      "price": 889
+    },
+    {
+      "id": 3,
+      "title": "产品标题产品标题3",
+      "img": "/static/image/goods.jpg",
+      "price": 887
+    },
+    {
+      "id": 3,
+      "title": "产品标题产品标题3",
+      "img": "/static/image/goods.jpg",
+      "price": 887
+    }
+  ]
+}

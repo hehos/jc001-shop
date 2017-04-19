@@ -1,0 +1,87 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "产品标题产品标题1",
+      "img": "/static/image/goods.jpg",
+      "price": 888
+    },
+    {
+      "id": 2,
+      "title": "产品标题产品标题2",
+      "img": "/static/image/goods.jpg",
+      "price": 889
+    },
+    {
+      "id": 3,
+      "title": "产品标题产品标题3",
+      "img": "/static/image/goods.jpg",
+      "price": 887
+    },
+    {
+      "id": 4,
+      "title": "产品标题产品标题4",
+      "img": "/static/image/goods.jpg",
+      "price": 887
+    },
+    {
+      "id": 5,
+      "title": "产品标题产品标题5",
+      "img": "/static/image/goods.jpg",
+      "price": 887
+    },
+    {
+      "id": 6,
+      "title": "产品标题产品标题6",
+      "img": "/static/image/goods.jpg",
+      "price": 887
+    },
+    {
+      "id": 7,
+      "title": "产品标题产品标题7",
+      "img": "/static/image/goods.jpg",
+      "price": 887
+    }
+  ],
+  "cates": [
+    {
+      "id": 1,
+      "name": "灯饰照明",
+      "subCates": [
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "灯饰照明",
+      "subCates": [
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" }
+      ]
+    },
+    {
+      "id": 1,
+      "name": "灯饰照明",
+      "subCates": [
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" },
+        { "id": 11, "name": "吊灯" }
+      ]
+    }
+  ]
+}

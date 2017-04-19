@@ -1,0 +1,21 @@
+{
+  "info": {
+    "id": 88,
+    "title": "产品标题产品标题产品标题",
+    "content": "产品详细内容产品详细内容产品详细内容产品详细内容",
+    "logo": "/static/image/logo.gif",
+    "price": 888,
+    "itemno": "CNS7980FDKFFA",
+    "company": "某某某某有限公司",
+    "addr": "四川成都",
+    "bizModel": "生产型",
+    "prodect": "产品类1、产品类1、产品类1、产品类1、产品类1",
+    "banner": [
+      "/static/image/banner.jpg",
+      "/static/image/banner.jpg",
+      "/static/image/banner.jpg",
+      "/static/image/banner.jpg"
+    ],
+    "detail": []
+  }
+}
