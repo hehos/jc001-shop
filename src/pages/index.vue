@@ -14,12 +14,12 @@
       </mt-swipe>
     </div>
     <div class="margin-b-8 white-bg index-head-nav">
-      <a class="nav-item" href="">企业实景</a>
-      <a class="nav-item" href="">企业画册</a>
-      <a class="nav-item" href="">企业动态</a>
-      <a class="nav-item" href="">企业介绍</a>
-      <a class="nav-item" href="">荣誉证书</a>
-      <a class="nav-item" href="">成功案例</a>
+      <router-link class="nav-item" to="/">企业实景</router-link>
+      <router-link class="nav-item" to="/photo">企业画册</router-link>
+      <router-link class="nav-item" to="/trends">企业动态</router-link>
+      <router-link class="nav-item" to="/">企业介绍</router-link>
+      <router-link class="nav-item" to="/">荣誉证书</router-link>
+      <router-link class="nav-item" to="/">成功案例</router-link>
     </div>
     <div class="margin-b-8 white-bg headline-box">
       <span class="f-left headline-title" @click="$router.push('news')">企业动态</span>

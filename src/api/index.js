@@ -7,7 +7,10 @@ let base = '/data/'
 let pages = [
   'index',
   'goods',
-  'goodsDetail'
+  'goodsDetail',
+  'photo',
+  'trends',
+  'videoDetail'
 
 ];
 let pagesData = {};

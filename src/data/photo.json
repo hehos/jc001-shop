@@ -1,0 +1,20 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "img": "/static/image/photo.jpg"
+    },
+    {
+      "id": 2,
+      "img": "/static/image/photo.jpg"
+    },
+    {
+      "id": 3,
+      "img": "/static/image/photo.jpg"
+    },
+    {
+      "id": 4,
+      "img": "/static/image/photo.jpg"
+    }
+  ]
+}

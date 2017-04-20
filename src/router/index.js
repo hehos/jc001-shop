@@ -8,6 +8,9 @@ import scenery from '@/pages/scenery';
 import goods from '@/pages/goods';
 import goodsDetail from '@/pages/goods-detail';
 import newsDetail from '@/pages/news-detail';
+import photo from '@/pages/photo';
+import trends from '@/pages/trends';
+import videoDetail from '@/pages/video-detail';
 
 Vue.use(Router);
 
@@ -58,6 +61,28 @@ export default new Router({
       components: {
         header: header,
         default: scenery
+      }
+    },
+    {
+      path: '/photo',
+      name: 'photo',
+      components: {
+        default: photo
+      }
+    },
+    {
+      path: '/trends',
+      name: 'trends',
+      components: {
+        header: header,
+        default: trends
+      }
+    },
+    {
+      path: '/video-detail?id',
+      name: 'videoDetail',
+      components: {
+        default: videoDetail
       }
     }
   ]

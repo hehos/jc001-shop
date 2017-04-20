@@ -51,6 +51,22 @@
       </mt-tab-container>
     </div>
 
+    <div id="bottom-fixed-bar" class="bottom-btns">
+      <div class="btn-item">
+        <span class="icon-heart-o"></span>
+        <div class="ico-text">收藏</div>
+      </div>
+      <div class="btn-item">
+        <span class="icon-share22"></span>
+        <div class="ico-text">分享</div>
+      </div>
+      <div class="btn-item contact-btn">
+        <mt-button size="large" type="danger">联系方式</mt-button>
+      </div>
+      <div class="btn-item contact-btn">
+        <mt-button class="active-btn" size="large" type="danger">在线询价</mt-button>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -63,7 +79,7 @@
 
     data () {
       return {
-        selected: 1,
+        selected: '1',
         info: []
       }
     },
@@ -84,7 +100,29 @@
   @import "../scss/_mixins.scss";
 
   #goods-detail-page {
+    padding-bottom: 45px;
 
+    .bottom-btns {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      background-color: #FFFFFF;
+      .btn-item {
+        text-align: center;
+        flex: 1 1 auto;
+      }
+      .contact-btn {
+        flex-basis: 15%;
+      }
+      .ico-text {
+        font-size: 12px;
+        margin-top: 3px;
+      }
+      .mint-button {
+        border-radius: 0;
+        font-size: 16px;
+      }
+    }
   }
 
 
