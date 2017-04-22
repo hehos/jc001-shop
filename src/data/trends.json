@@ -1,15 +1,12 @@
 {
   "items": [
     {
-      "route": "photo",
       "type": "photo",
-      "name": "电子画册",
       "date": "4/20 10:10",
       "content": "动态描述动态描述动态描述",
       "img": "/static/image/banner.jpg"
     },
     {
-      "route": "news-detail",
       "type": "news",
       "id": 1,
       "title": "新闻名称",
@@ -17,7 +14,6 @@
       "content": "动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述"
     },
     {
-      "route": "goods-detail",
       "type": "goods",
       "id": 1,
       "title": "产品名称",
@@ -26,17 +22,17 @@
       "img": "/static/image/banner.jpg"
     },
     {
-      "title": "VR名称",
       "type": "vr",
+      "title": "VR名称",
       "date": "4/20 10:10",
       "content": "动态描述动态描述动态描述动态描述动态描述动态描述",
       "img": "/static/image/banner.jpg",
       "url": "http://vr.jiuzheng.com/index.php?q=krpano/show&id=23"
     },
     {
-      "route": "video-detail",
-      "title": "视频名称",
       "type": "video",
+      "id": 2,
+      "title": "视频名称",
       "date": "4/20 10:10",
       "content": "动态描述动态描述动态描述动态描述动态描述动态描述",
       "video": "http://www.w3school.com.cn/i/movie.ogg"

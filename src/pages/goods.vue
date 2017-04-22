@@ -2,7 +2,7 @@
   <div id="goods-page">
     <header class="mint-header">
       <div class="mint-header-button is-left">
-        <a href="#/" class="router-link-active"><i class="icon-angle-left2"></i></a>
+        <span @click="$router.go(-1)"><i class="icon-angle-left2"></i></span>
       </div>
       <mt-search
         v-model="searchKey"

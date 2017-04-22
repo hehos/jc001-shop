@@ -1,7 +1,7 @@
 {
   "info": {
     "logo": "/static/image/logo.gif",
-    "companyName": "企业名称企业名称企业名称"
+    "company": "企业名称企业名称企业名称"
   },
   "bannerItems": [
     {
@@ -17,22 +17,36 @@
       "img": "/static/image/banner.jpg"
     }
   ],
-  "headlineItems": [
+  "trendsItems": [
     {
+      "type": "news",
       "id": 1,
-      "title": "动态标题动态标题1"
+      "title": "新闻名称",
+      "date": "4/20 10:10",
+      "content": "动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述"
     },
     {
-      "id": 2,
-      "title": "动态标题动态标题2"
+      "type": "goods",
+      "id": 1,
+      "title": "产品名称",
+      "date": "4/20 10:10",
+      "content": "动态描述动态描述动态描述动态描述动态描述动态描述",
+      "img": "/static/image/banner.jpg"
     },
     {
-      "id": 3,
-      "title": "动态标题动态标题3"
+      "type": "news",
+      "id": 1,
+      "title": "新闻名称",
+      "date": "4/20 10:10",
+      "content": "动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述"
     },
     {
-      "id": 4,
-      "title": "动态标题动态标题4"
+      "type": "goods",
+      "id": 1,
+      "title": "产品名称",
+      "date": "4/20 10:10",
+      "content": "动态描述动态描述动态描述动态描述动态描述动态描述",
+      "img": "/static/image/banner.jpg"
     }
   ],
   "goodsItems": [

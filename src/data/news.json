@@ -1,0 +1,25 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "1这是标题这是标题11这是标题这是标题1",
+      "img": "/static/image/goods.jpg",
+      "readNum": 888,
+      "likeNum": 88
+    },
+    {
+      "id": 1,
+      "title": "2这是标题这是标题11这是标题这是标题2",
+      "img": "/static/image/goods.jpg",
+      "readNum": 888,
+      "likeNum": 88
+    },
+    {
+      "id": 1,
+      "title": "3这是标题这是标题11这是标题这是标题3",
+      "img": "/static/image/goods.jpg",
+      "readNum": 888,
+      "likeNum": 88
+    }
+  ]
+}

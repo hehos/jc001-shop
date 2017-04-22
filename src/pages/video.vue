@@ -1,10 +1,6 @@
 <template>
-  <div id[="video-detail-page">
-    <span id="top-back-btn" @click="$router.go(-1)">
-      <i class="icon-angle-left3"></i>
-    </span>
-
-    视频详细页
+  <div>
+    视频列表
   </div>
 </template>
 
@@ -17,7 +13,7 @@
 
     data () {
       return {
-
+        items: []
       }
     },
     created () {

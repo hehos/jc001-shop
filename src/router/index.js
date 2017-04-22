@@ -10,7 +10,12 @@ import goodsDetail from '@/pages/goods-detail';
 import newsDetail from '@/pages/news-detail';
 import photo from '@/pages/photo';
 import trends from '@/pages/trends';
+import video from '@/pages/video';
 import videoDetail from '@/pages/video-detail';
+import news from '@/pages/news';
+import intro from '@/pages/intro';
+import lce from '@/pages/lce';
+import casus from '@/pages/casus';
 
 Vue.use(Router);
 
@@ -33,7 +38,39 @@ export default new Router({
       }
     },
     {
-      path: '/news-detail/:id',
+      path: '/intro',
+      name: 'intro',
+      components: {
+        header: header,
+        default: intro
+      }
+    },
+    {
+      path: '/lce',
+      name: 'lce',
+      components: {
+        header: header,
+        default: lce
+      }
+    },
+    {
+      path: '/casus',
+      name: 'casus',
+      components: {
+        header: header,
+        default: casus
+      }
+    },
+    {
+      path: '/news',
+      name: 'news',
+      components: {
+        header: header,
+        default: news
+      }
+    },
+    {
+      path: '/news/:id',
       name: 'newsDetail',
       components: {
         header: header,
@@ -48,7 +85,7 @@ export default new Router({
       }
     },
     {
-      path: '/goods-detail/:id',
+      path: '/goods/:id',
       name: 'goodsDetail',
       components: {
         header: header,
@@ -59,7 +96,6 @@ export default new Router({
       path: '/scenery',
       name: 'scenery',
       components: {
-        header: header,
         default: scenery
       }
     },
@@ -79,7 +115,14 @@ export default new Router({
       }
     },
     {
-      path: '/video-detail?id',
+      path: '/video',
+      name: 'video',
+      components: {
+        default: video
+      }
+    },
+    {
+      path: '/video/:id',
       name: 'videoDetail',
       components: {
         default: videoDetail

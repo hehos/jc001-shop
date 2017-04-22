@@ -1,0 +1,19 @@
+{
+  "items": [
+    {
+      "id": 1,
+      "title": "案例1",
+      "img": "/static/image/casus.jpg"
+    },
+    {
+      "id": 2,
+      "title": "案例2",
+      "img": "/static/image/casus.jpg"
+    },
+    {
+      "id": 3,
+      "title": "案例3",
+      "img": "/static/image/casus.jpg"
+    }
+  ]
+}

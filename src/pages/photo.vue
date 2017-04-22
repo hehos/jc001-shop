@@ -43,54 +43,11 @@
     components: {
     }
   }
+
 </script>
 
 <style lang="scss">
 
-  @import "../scss/_variables.scss";
-  @import "../scss/_mixins.scss";
-
-  #photo-page {
-    background-color: #1e2024;
-
-    #top-back-btn {
-      color: #FFFFFF;
-    }
-
-    .mint-swipe, .swiper-container {
-      height: 100vh;
-      img {
-        height: auto;
-        vertical-align: middle;
-      }
-    }
-    .mint-swipe-item, .swiper-slide {
-      line-height: 95vh;
-      .item-text {
-        position: fixed;
-        bottom: 0;
-        left: 0;
-        right: 0;
-        max-height: 50vh;
-        line-height: 1.8;
-        padding: 10px 15px;
-        overflow: auto;
-        font-size: 13px;
-        color: #FFFFFF;
-        @include background-color-rgba(#1e2024, .2);
-      }
-    }
-    .mint-swipe-indicator {
-      background-color: #FFFFFF;
-      &.is-active {
-        background-color: $orange-dark;
-      }
-    }
-    .swiper-pagination {
-      padding-left: 20px;
-      text-align: left;
-      color: #FFFFFF;
-    }
-  }
+  @import "../scss/photo.scss";
 
 </style>

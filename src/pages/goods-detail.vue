@@ -85,7 +85,7 @@
     },
     created () {
       let param = {}
-      apiData.goodsDetail(param).then(data => {
+      apiData.post.goodsDetail(param).then(data => {
         this.info = data.info;
       })
     },

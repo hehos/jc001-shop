@@ -3,7 +3,7 @@
     <div class="index-head">
       <span class="f-left logo-box"><img :src="info.logo" alt=""></span>
       <span class="f-right"><i class="icon-heart-o"></i></span>
-      <h1 class="company-name">{{ info.companyName }}</h1>
+      <h1 class="company-name">{{ info.company }}</h1>
     </div>
     <div class="white-bg index-banner">
       <mt-swipe :auto="4000" style="height: 200px;">
@@ -14,42 +14,43 @@
       </mt-swipe>
     </div>
     <div class="margin-b-8 white-bg index-head-nav">
-      <router-link class="nav-item" to="/">企业实景</router-link>
+      <router-link class="nav-item" to="/scenery">企业实景</router-link>
       <router-link class="nav-item" to="/photo">企业画册</router-link>
       <router-link class="nav-item" to="/trends">企业动态</router-link>
-      <router-link class="nav-item" to="/">企业介绍</router-link>
-      <router-link class="nav-item" to="/">荣誉证书</router-link>
-      <router-link class="nav-item" to="/">成功案例</router-link>
+      <router-link class="nav-item" to="/intro">企业介绍</router-link>
+      <router-link class="nav-item" to="/lce">荣誉证书</router-link>
+      <router-link class="nav-item" to="/casus">成功案例</router-link>
     </div>
-    <div class="margin-b-8 white-bg headline-box">
-      <span class="f-left headline-title" @click="$router.push('news')">企业动态</span>
-      <span class="f-right headline-more" @click="$router.push('news')">
+    <div class="margin-b-8 white-bg headline-box"
+      @click="$router.push('trends')">
+      <span class="f-left headline-title">企业动态</span>
+      <span class="f-right headline-more">
         <i class="icon-angle-right3"></i>
       </span>
       <swiper class="headline-items" :options="headlineOption">
 
         <swiper-slide class="headline-item"
-          v-for="i in Math.ceil(headlineItems.length/2)" :key="i">
-          <router-link
-            v-for="item in headlineItems.slice((i-1)*2, i*2)"
+          v-for="i in Math.ceil(trendsItems.length/2)" :key="i">
+          <div
+            v-for="item in trendsItems.slice((i-1)*2, i*2)"
             :key="item.id"
-            :to="{ name: 'newsDetail', params: { id: item.id } }">
-            {{ item.title }}
-          </router-link>
+            :to="{ name: 'trends', params: { id: item.id } }">
+            {{ item.content }}
+          </div>
         </swiper-slide>
 
       </swiper>
     </div>
 
     <div class="margin-b-8 other-nav-box">
-      <div class="f-left media-base">
+      <div class="media-base">
         <router-link :to="{ name: 'scenery' }" >
-          <div class="img"><img src="/static/image/banner.jpg" alt=""></div>
           <h5 class="media-title">
             公司<em>实景</em></h5>
           <p class="media-explain">
             实景介绍实景介绍实景介绍实景介绍实景介绍实景介绍实景介绍
           </p>
+          <div class="img"><img src="/static/image/banner.jpg" alt=""></div>
         </router-link>
       </div>
 
@@ -114,7 +115,7 @@
       return {
         info: {},
         bannerItems: [],
-        headlineItems: [],
+        trendsItems: [],
         goodsItems: [],
 
         headlineOption: {
@@ -130,7 +131,7 @@
       apiData.index(param).then(data => {
         this.info = data.info;
         this.bannerItems = data.bannerItems;
-        this.headlineItems = data.headlineItems;
+        this.trendsItems = data.trendsItems;
         this.goodsItems = data.goodsItems;
       })
     },
