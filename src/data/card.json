@@ -1,0 +1,15 @@
+{
+  "info": {
+    "name": "伍妹",
+    "job": "销售经理",
+    "mobile": "18888888888",
+    "avatar": "/static/image/avatar.jpg",
+    "logo": "/static/image/logo.gif",
+    "company": "某某某某有限公司",
+    "buildDate": "2014年10月20日",
+
+    "readNum": 888,
+    "collectNum": 88,
+    "shareNum": 88
+  }
+}

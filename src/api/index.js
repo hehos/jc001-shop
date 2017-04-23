@@ -17,13 +17,12 @@ let pages = [
   'lce',
   'casus',
   'news',
-  'newsDetail'
+  'newsDetail',
+  'card'
 
 ];
 
 let postPages = [
-  'goodsDetail',
-  'newsDetail'
 
 ];
 

@@ -16,6 +16,8 @@ import news from '@/pages/news';
 import intro from '@/pages/intro';
 import lce from '@/pages/lce';
 import casus from '@/pages/casus';
+import card from '@/pages/card';
+import admin from '@/pages/admin';
 
 Vue.use(Router);
 
@@ -126,6 +128,23 @@ export default new Router({
       name: 'videoDetail',
       components: {
         default: videoDetail
+      }
+    },
+    {
+      path: '/card',
+      name: 'card',
+      components: {
+        header: header,
+        default: card
+      }
+    },
+
+    // 后台 admin
+    {
+      path: '/admin',
+      name: 'admin',
+      components: {
+        default: admin
       }
     }
   ]

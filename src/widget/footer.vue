@@ -5,7 +5,7 @@
         <i slot="icon" class="icon-home-o"></i>
         管理中心
       </mt-tab-item>
-      <mt-tab-item id="2">
+      <mt-tab-item id="2" @click="alert(88)">
         <i slot="icon" class="icon-certification-o"></i>
         名片
       </mt-tab-item>
@@ -38,6 +38,25 @@
       apiData.index(param).then(data => {
 
       })
+    },
+    watch: {
+      selected(val) {
+        val = parseInt(val);
+        switch (val) {
+          case 1:
+            this.$router.push('/admin');
+            break;
+          case 2:
+            this.$router.push('/card');
+            break;
+          case 3:
+            this.$router.push('/');
+            break;
+          case 4:
+            this.$router.push('/');
+            break;
+        }
+      }
     },
     components: {
     }
