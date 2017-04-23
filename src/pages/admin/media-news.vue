@@ -1,18 +1,29 @@
 <template>
   <div id="admin-page">
 
-    <div class="block-wrap">
-      <mt-cell title="企业实景" is-link></mt-cell>
-      <mt-cell title="电子相册" is-link></mt-cell>
-    </div>
+    <mt-header title="企业新闻">
+      <div slot="left">
+        <i @click="$router.go(-1)" class="icon-angle-left3"></i>
+      </div>
+      <div slot="right">
+        <span class="right-link"><i class="icon-edit3"></i>发布新闻</span>
+      </div>
+    </mt-header>
 
-    <div class="block-wrap">
-      <mt-cell title="企业相册" is-link></mt-cell>
-      <mt-cell title="企业视频" is-link></mt-cell>
-    </div>
-
-    <div class="block-wrap">
-      <mt-cell title="企业新闻" is-link></mt-cell>
+    <div class="white-bg media-small-imgtxt general-imgtxt2"
+         v-for="(item, idx) in items" :key="idx">
+      <router-link :to="{ name: 'newsDetail', params: { id: item.id } }">
+          <span class="img">
+            <img :src="item.img" alt="5:4比例"/>
+          </span>
+        <div class="media-txt">
+          <h5 class="media-title">
+            {{ item.title }}</h5>
+          <p class="media-explain">
+            阅读：{{ item.readNum }}
+          </p>
+        </div>
+      </router-link>
     </div>
 
   </div>
@@ -32,7 +43,7 @@
     },
     created () {
       let param = {}
-      apiData.index(param).then(data => {
+      apiData.news(param).then(data => {
         this.items = data.items;
       })
     },

@@ -79,7 +79,7 @@
       </div>
     </div>
 
-    <div class="block-wrap goods-list">
+    <div class="block-wrap media-list">
       <router-link class="title-bar" to="/goods">
           <h2 class="title">主营产品</h2>
           <span class="more">

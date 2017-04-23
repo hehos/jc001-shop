@@ -27,6 +27,10 @@ import tpls from '@/pages/admin/tpls.vue';
 import tplDetail from '@/pages/admin/tpl-detail.vue';
 import media from '@/pages/admin/media.vue';
 import mediaScenery from '@/pages/admin/media-scenery.vue';
+import mediaAlbum from '@/pages/admin/media-album.vue';
+import mediaPhoto from '@/pages/admin/media-photo.vue';
+import mediaVideo from '@/pages/admin/media-video.vue';
+import mediaNews from '@/pages/admin/media-news.vue';
 import collect from '@/pages/admin/collect.vue';
 
 Vue.use(Router);
@@ -218,8 +222,40 @@ export default new Router({
       path: '/media-scenery',
       name: 'mediaScenery',
       components: {
-        header: header,
+        // header: header,
         default: mediaScenery
+      }
+    },
+    {
+      path: '/media-album',
+      name: 'mediaAlbum',
+      components: {
+        header: header,
+        default: mediaAlbum
+      }
+    },
+    {
+      path: '/media-photo',
+      name: 'mediaPhoto',
+      components: {
+        header: header,
+        default: mediaPhoto
+      }
+    },
+    {
+      path: '/media-video',
+      name: 'mediaVideo',
+      components: {
+        header: header,
+        default: mediaVideo
+      }
+    },
+    {
+      path: '/media-news',
+      name: 'mediaNews',
+      components: {
+        // header: header,
+        default: mediaNews
       }
     },
     {

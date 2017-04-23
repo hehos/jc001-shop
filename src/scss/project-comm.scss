@@ -15,6 +15,7 @@ body {
 .mint-header,
 .mint-navbar {
   border-bottom: 1px solid $grayBdLight;
+  margin-bottom: 8px;
 }
 .mint-header {
   height: 48px;
@@ -31,6 +32,7 @@ body {
   }
   .right-link {
     font-size: 14px;
+    color: #1F76ED;
   }
 }
 
@@ -83,8 +85,6 @@ body {
 // ========================
 // 自定义公用样式
 .mint-header {
-  [class^="icon-"],
-  [class*=" icon-"],
   .is-left,
   .is-right {
     font-size: 16px;
@@ -152,7 +152,11 @@ body {
   background-color: #ffffff;
   margin-bottom: 8px;
   .block-cont {
-    padding: 5px 10px;
+    margin: 10px 10px;
+    padding-top: 10px;
+  }
+  .title-bar + .block-cont {
+    padding-top: 0;
   }
 }
 .title-bar {
@@ -181,8 +185,9 @@ body {
   }
   .img {
     height: 60px;
-    line-height: 60px;
+    line-height: middleImg(60px);
     width: 60px;
+    border: none;
   }
 }
 
@@ -191,9 +196,9 @@ body {
   padding: 12px 12px 0px;
   margin-bottom: 8px;
   .img {
-    width: 80px;
+    width: 100px;
     height: 80px;
-    line-height: 80px;
+    line-height: middleImg(80px);
     margin-bottom: 12px;
   }
   .media-title {
@@ -366,3 +371,35 @@ body {
   }
 }
 
+
+
+.media-list {
+  .block-cont {
+    @include clearfix();
+  }
+  .media-base {
+    float: left;
+    width: 47%;
+    margin: 0 1.5% 10px;
+    border: 1px solid $grayBdLight;
+  }
+  .media-title, .media-price {
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  img { width: 100%; }
+  em { margin-left: 0; }
+  .media-price {
+    padding-bottom: 6px;
+    font-size: 13px;
+    color: $gray2;
+    strong { font-size: 1.1em; }
+  }
+
+  .media-plus-btn {
+    height: 100px;
+    line-height: 100px;
+    font-size: 40px;
+    color: $gray-light2;
+  }
+}

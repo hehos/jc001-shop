@@ -5,7 +5,7 @@
          v-for="(item, idx) in items" :key="idx">
       <router-link :to="{ name: 'newsDetail', params: { id: item.id } }">
           <span class="img">
-            <img :src="item.img" alt=""/>
+            <img :src="item.img" alt="5:4比例"/>
           </span>
         <div class="media-txt">
           <h5 class="media-title">

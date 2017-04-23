@@ -3,7 +3,7 @@
 
     <div class="block-wrap">
       <mt-cell title="企业实景" is-link to="/media-scenery"></mt-cell>
-      <mt-cell title="电子相册" is-link to="/media-album "></mt-cell>
+      <mt-cell title="电子相册" is-link to="/media-scenery"></mt-cell>
     </div>
 
     <div class="block-wrap">
