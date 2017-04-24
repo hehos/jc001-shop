@@ -1,0 +1,28 @@
+{
+  "items": [
+    {
+      "title": "服务名称1",
+      "img": "/static/image/cover.jpg",
+      "content": "事件描述事件描述事件描述事件描述事件描述",
+      "date": "2017-3-15"
+    },
+    {
+      "title": "xxx客服1",
+      "img": "/static/image/cover.jpg",
+      "content": "事件描述事件描述事件描述事件描述事件描述",
+      "date": "2017-3-15"
+    },
+    {
+      "title": "服务名称1",
+      "img": "/static/image/cover.jpg",
+      "content": "事件描述事件描述事件描述事件描述事件描述",
+      "date": "2017-3-15"
+    },
+    {
+      "title": "xxx客服1",
+      "img": "/static/image/cover.jpg",
+      "content": "事件描述事件描述事件描述事件描述事件描述",
+      "date": "2017-3-15"
+    }
+  ]
+}

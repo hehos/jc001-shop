@@ -18,7 +18,10 @@ let pages = [
   'casus',
   'news',
   'newsDetail',
-  'card'
+  'card',
+  'statistics',
+  'message',
+  'collect'
 
 ];
 

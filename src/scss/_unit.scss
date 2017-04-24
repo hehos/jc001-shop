@@ -38,6 +38,23 @@ body {
   white-space: nowrap;
 }
 
+.layout-flex-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  text-align: center;
+  .flex-item {
+    margin: 1.1em 0;
+  }
+  .ico-box {
+    font-size: 2em;
+    color: $gray-light;
+  }
+  .text {
+    margin: .5em 0;
+  }
+}
+
 // ====================
 // 模拟select元素的样式
 //.select {

@@ -178,7 +178,6 @@ body {
   .media-title {
     font-weight: normal;
     line-height: 1.2;
-    height: 2.4em;
     margin-bottom: 5px;
     overflow: hidden;
     white-space: normal;
@@ -203,7 +202,6 @@ body {
   }
   .media-title {
     line-height: 1.4;
-    height: 2.8em;
     margin-bottom: 15px;
   }
   .bottom-acts {
@@ -304,8 +302,7 @@ body {
 // 钻石，黄金，VIP会员，认证等样式
 .grade-info {
   display: inline-block;
-  [class^="icon-"], [class*=" icon-"],
-  [class^="myicon-"], [class*=" myicon-"] {
+  .ceneral-ico, .word-ico {
     display: inline-block;
     width: 1.5em;
     height: 1.5em;
@@ -314,6 +311,7 @@ body {
     font-size: 16px;
     border-radius: 100%;
     color: #FFFFFF;
+    vertical-align: middle;
   }
   .icon-vip-o {
     background-color: green;
@@ -325,9 +323,8 @@ body {
     background-color: #1F76ED;
   }
 
+  [class^="myicon-"], [class*=" myicon-"],
   .word-ico {
-    height: 22px;
-    line-height: 22px;
     margin-right: 0;
     border-radius: 3px;
     font-size: 15px;

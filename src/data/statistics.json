@@ -1,0 +1,22 @@
+{
+  "singleItems": [
+    {
+      "type": "shop",
+      "lookNum": 888,
+      "collectNum": 888,
+      "shareNum": 888
+    },
+    {
+      "type": "card",
+      "lookNum": 888,
+      "collectNum": 888,
+      "shareNum": 888
+    },
+    {
+      "type": "goods",
+      "lookNum": 888,
+      "collectNum": 888,
+      "shareNum": 888
+    }
+  ]
+}

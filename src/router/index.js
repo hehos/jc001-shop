@@ -31,6 +31,8 @@ import mediaAlbum from '@/pages/admin/media-album.vue';
 import mediaPhoto from '@/pages/admin/media-photo.vue';
 import mediaVideo from '@/pages/admin/media-video.vue';
 import mediaNews from '@/pages/admin/media-news.vue';
+import statistics from '@/pages/admin/statistics.vue';
+import message from '@/pages/admin/message.vue';
 import collect from '@/pages/admin/collect.vue';
 
 Vue.use(Router);
@@ -256,6 +258,22 @@ export default new Router({
       components: {
         // header: header,
         default: mediaNews
+      }
+    },
+    {
+      path: '/message',
+      name: 'message',
+      components: {
+        header: header,
+        default: message
+      }
+    },
+    {
+      path: '/statistics',
+      name: 'statistics',
+      components: {
+        header: header,
+        default: statistics
       }
     },
     {

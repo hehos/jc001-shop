@@ -3,10 +3,10 @@
   <div id="admin-page" class="bottom-bar-padding admin-index">
 
     <div class="head-wrap clearfix  ">
-      <span class="f-right message-btn" v-if="isLogin">
+      <router-link to="/message" class="f-right message-btn" v-if="isLogin">
         <i class="icon-comment-o2"></i>
         <span class="msg-point-ico"></span>
-      </span>
+      </router-link>
       <span class="f-left img logo-box">
         <img v-if="isLogin" src="/static/image/logo.gif" alt="1:1比例">
         <i class="icon-image"></i>
@@ -52,7 +52,7 @@
     <div class="shop-trends" v-if="isLogin">
 
       <div class="trends-item">
-        <a href="/#/photo">
+        <router-link to="/statistics">
           <div class="media-small-imgtxt">
             <div class="img ico-box" style="background-color: rgb(49, 199, 74);">
               <span class="icon-line-chart"></span>
@@ -66,9 +66,9 @@
             <div class="gray-light2 cont-center" style="font-size: 32px">8888</div>
             <div class="cont-center">今日浏览</div>
            </div>
-        </a>
+        </router-link>
         <!---->
-        <a href="/#/photo" class="detail-btn"> 立即查看 </a>
+        <router-link to="/statistics" class="detail-btn"> 立即查看 </router-link>
       </div>
 
       <div class="trends-item">
