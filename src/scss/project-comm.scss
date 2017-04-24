@@ -143,10 +143,6 @@ body {
   right: 0;
 }
 
-// 输入框右边有元素情况
-.has-right-el .mint-cell-value {
-  padding-right: 5em;
-}
 
 .block-wrap {
   background-color: #ffffff;
@@ -156,6 +152,7 @@ body {
   }
 }
 .title-bar {
+  display: block;
   padding: 0 10px;
   margin-bottom: 5px;
   border-bottom: 1px solid $grayBdLight;
@@ -164,7 +161,6 @@ body {
     font-weight: normal;
   }
 }
-
 
 // 通用的图文模块
 .general-imgtxt,
@@ -220,7 +216,6 @@ body {
   }
 }
 
-
 // 模拟已失效章印
 .stamp-invalid {
   position: absolute;
@@ -265,4 +260,33 @@ body {
 .mint-cell-swipe-button {
   display: flex;
   align-items: center;
+}
+
+.company-info-wrap {
+  padding: 10px 15px;
+  .company-info-box {
+    display: flex;
+    align-items: center;
+  }
+  .media-small-imgtxt {
+    flex: 1 1 auto;
+    margin-bottom: 0;
+  }
+  .img {
+    height: 60px;
+    width: 60px;
+    border-radius: 50%;
+  }
+  .media-title {
+    margin-top: 5px;
+    font-size: 17px;
+  }
+  .label-items {
+    margin-top: 15px;
+  }
+  .label-item {
+    padding: 5px 0;
+    padding-left: 5em;
+    text-indent: -5em;
+  }
 }

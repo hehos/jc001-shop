@@ -17,17 +17,22 @@
       <div class="itemno">产品编号：CNSKJKFA888789</div>
     </div>
 
-    <div class="block-wrap company-info">
-      <div class="media-small-imgtxt">
-        <a href="" class="img"><img :src="info.logo" alt=""/></a>
+    <div class="white-bg margin-b-8 company-info-wrap">
+      <div class="grid-item media-small-imgtxt">
+        <div class="img">
+          <img :src="info.logo" alt="">
+        </div>
         <div class="media-txt">
-          <h5 class="media-title">{{ info.company }}</h5>
+          <h5 class="media-title"> {{ info.company }}</h5>
           <p class="media-explain"><i class="icon-map2-o"></i>
-          所在地：{{ info.addr }}</p>
+            所在地：{{ info.addr }}</p>
         </div>
       </div>
-      <div class="label-item"><span>经营模式：</span>{{ info.bizModel }}</div>
-      <div class="label-item"><span>主营产品：</span>{{ info.prodect }}</div>
+
+      <div class="label-items">
+        <div class="label-item"><span>经营模式：</span>{{ info.bizModel }}</div>
+        <div class="label-item"><span>主营产品：</span>{{ info.prodect }}</div>
+      </div>
     </div>
 
     <div class="block-wrap">
@@ -85,7 +90,7 @@
     },
     created () {
       let param = {}
-      apiData.post.goodsDetail(param).then(data => {
+      apiData.goodsDetail(param).then(data => {
         this.info = data.info;
       })
     },
@@ -101,6 +106,22 @@
 
   #goods-detail-page {
     padding-bottom: 45px;
+
+    .summary-info {
+      line-height: 2;
+      padding: 10px;
+      .title {
+        font-size: 1.1em;
+      }
+      .title, .content {
+        line-height: 1.4;
+        padding: .3em 0;
+      }
+      .content, .itemno {
+        color: $gray2;
+      }
+      .price strong { font-size: 1.2em; }
+    }
 
     .bottom-btns {
       display: flex;
@@ -122,6 +143,10 @@
         border-radius: 0;
         font-size: 16px;
       }
+    }
+
+    .mint-tab-container {
+      padding: 10px;
     }
   }
 

@@ -1,5 +1,19 @@
 <template>
   <div id="card-page">
+    <mt-header title="名片">
+      <div slot="left">
+        <i @click="$router.go(-1)" class="icon-angle-left3"></i>
+      </div>
+      <div slot="right" @click="popupBoxVisible = true">
+        <span class="icon-qrcode"></span>
+      </div>
+    </mt-header>
+
+    <mt-popup class="qr-popup-box"
+      v-model="popupBoxVisible"
+      popup-transition="popup-fade">
+      <img src="/static/image/qr.jpg" alt="">
+    </mt-popup>
 
     <div class="header-avatar-wrap2">
       <div class="avatar-box">
@@ -11,16 +25,18 @@
       </div>
     </div>
     <router-link to="/" class="white-bg margin-b-8 company-info-wrap">
-      <div class="grid-item media-small-imgtxt">
-        <div class="img">
-          <img src="/static/image/logo.gif" alt="">
+      <div class="company-info-box">
+        <div class="grid-item media-small-imgtxt">
+          <div class="img">
+            <img src="/static/image/logo.gif" alt="">
+          </div>
+          <div class="media-txt">
+            <h5 class="media-title"> 某某某某有限公司</h5>
+            <p class="media-explain">入住时间：2014年10月20日</p>
+          </div>
         </div>
-        <div class="media-txt">
-          <h5 class="media-title"> 某某某某有限公司</h5>
-          <p class="media-explain">入住时间：2014年10月20日</p>
-        </div>
+        <span class="grid-item icon-angle-right2"></span>
       </div>
-      <span class="grid-item icon-angle-right2"></span>
     </router-link>
 
     <div class="white-bg margin-b-25 company-state">
@@ -62,6 +78,7 @@
 
     data () {
       return {
+        popupBoxVisible: false,
         info: []
       }
     },
@@ -82,6 +99,12 @@
   @import "../scss/_mixins.scss";
 
   #card-page {
+    .qr-popup-box {
+      width: 60%;
+      background-color: transparent;
+      img { width: 100%; }
+    }
+
     .header-avatar-wrap2 {
       background-color: #fef2da;
       padding: 15px;
@@ -116,24 +139,6 @@
       }
     }
 
-    .company-info-wrap {
-      display: flex;
-      align-items: center;
-      padding: 10px 15px;
-      .media-small-imgtxt {
-        flex: 1 1 auto;
-        margin-bottom: 0;
-      }
-      .img {
-        height: 60px;
-        width: 60px;
-        border-radius: 50%;
-      }
-      .media-title {
-        margin-top: 5px;
-        font-size: 17px;
-      }
-    }
     .company-state {
       display: flex;
       align-items: center;

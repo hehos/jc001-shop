@@ -1,30 +1,35 @@
 <template>
   <div id="intro-page">
 
-    <mt-cell title="公司名称:" :value="info.company"></mt-cell>
-    <mt-cell title="经营模式:" :value="info.bizModel"></mt-cell>
-    <mt-cell title="所在地区:" :value="info.addr"></mt-cell>
-    <mt-cell title="主营产品:" :value="info.prodect"></mt-cell>
-    <mt-cell title="商品条数:" :value="info.proNum"></mt-cell>
+    <mt-cell title="公司名称：" :value="info.company"></mt-cell>
+    <mt-cell title="经营模式：" :value="info.bizModel"></mt-cell>
+    <mt-cell title="所在地区：" :value="info.addr"></mt-cell>
+    <mt-cell title="主营产品：" :value="info.prodect"></mt-cell>
+    <mt-cell title="商品条数：" :value="info.proNum"></mt-cell>
 
-    <div class="margin-15 info-title"><strong>认证信息</strong></div>
-    <div class="info-grade">
-      <span class="grade" v-if="vipGrade">
-        <i :class="vipGrade.icon"></i>{{ vipGrade.text }}
-        <span>{{ info.age }}年</span>
+
+    <div class="info-title"><strong>认证信息</strong></div>
+    <div class="margin-b-8 white-bg info-grade">
+      <span class="info-item" v-if="vipGrade">
+        <i :class="vipGrade.icon"></i>
+        <i class="icon-vip-o"></i>
+        <i class="icon-crown-o"></i>
+        <i class="icon-diamond"></i>
+        {{ vipGrade.text }}
+        <span><em>{{ info.age }}</em>年</span>
       </span>
-      <span v-if="info.hasBao">宝</span>
-      <span v-if="info.hasLce" class="icon-rz-firm"></span>
+      <span class="info-item" v-if="info.hasBao"><i class="word-ico">宝</i></span>
+      <span class="info-item" v-if="info.hasLce"><i class="icon-rz-firm word-ico"></i></span>
     </div>
 
-    <div class="margin-15 info-title"><strong>工商注册信息</strong></div>
-    <mt-cell title="公司名称:" :value="info.company"></mt-cell>
-    <mt-cell title="公司地址:" :value="info.location"></mt-cell>
-    <mt-cell title="成立时间:" :value="info.buildDate"></mt-cell>
-    <mt-cell title="经营范围:" :value="info.bizScope"></mt-cell>
-    <mt-cell title="注册号:" :value="info.proNum"></mt-cell>
-    <mt-cell title="法人代表:" :value="info.regId"></mt-cell>
-    <mt-cell title="企业类型:" :value="info.companyType"></mt-cell>
+    <div class="info-title"><strong>工商注册信息</strong></div>
+    <mt-cell title="公司名称：" :value="info.company"></mt-cell>
+    <mt-cell title="公司地址：" :value="info.location"></mt-cell>
+    <mt-cell title="成立时间：" :value="info.buildDate"></mt-cell>
+    <mt-cell title="经营范围：" :value="info.bizScope"></mt-cell>
+    <mt-cell title="注册号：" :value="info.proNum"></mt-cell>
+    <mt-cell title="法人代表：" :value="info.regId"></mt-cell>
+    <mt-cell title="企业类型：" :value="info.companyType"></mt-cell>
 
 
 
@@ -42,7 +47,7 @@
       return {
         info: {},
         gradeCfg: [
-          { text: 'VIP', icon: 'icon-vip-o', value: 1 },
+          { text: 'VIP会员', icon: 'icon-vip-o', value: 1 },
           { text: '黄金会员', icon: 'icon-crown-o', value: 2 },
           { text: '钻石会员', icon: 'icon-diamond', value: 3 }
         ]
@@ -70,6 +75,68 @@
   @import "../scss/_variables.scss";
   @import "../scss/_mixins.scss";
 
+  #intro-page {
+    .mint-cell-wrapper {
+      align-items: flex-start;
+      line-height: 1.5em;
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-origin: border-box;
+    }
+    .mint-cell-title {
+      flex: 0 0 6em;
+      color: $gray2;
+    }
+    .mint-cell-value {
+      color: $gray-dark;
+    }
+
+    .info-title {
+      margin: 20px 12px 12px;
+    }
+
+    .info-grade {
+      padding: 10px 12px;
+      .info-item {
+        display: inline-block;
+        margin-right: 10px;
+        padding: 5px;
+      }
+      // 钻石，黄金，VIP会员图片样式
+      .icon-vip-o,
+      .icon-crown-o,
+      .icon-diamond,
+      .word-ico {
+        display: inline-block;
+        width: 25px;
+        height: 25px;
+        line-height: 25px;
+        text-align: center;
+        font-size: 16px;
+        border-radius: 100%;
+        color: #FFFFFF;
+      }
+      .icon-vip-o {
+        background-color: green;
+      }
+      .icon-crown-o {
+        background-color: $brand-warning;
+      }
+      .icon-diamond {
+        background-color: #1F76ED;
+      }
+
+      .word-ico {
+        height: 22px;
+        line-height: 22px;
+        margin-right: 0;
+        border-radius: 3px;
+        font-size: 15px;
+        background-color: #990000;
+        color: #fadf6b;
+      }
+    }
+  }
 
 
 </style>

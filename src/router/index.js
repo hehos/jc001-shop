@@ -134,7 +134,7 @@ export default new Router({
       path: '/card',
       name: 'card',
       components: {
-        header: header,
+        // header: header,
         default: card
       }
     },

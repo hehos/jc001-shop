@@ -47,6 +47,21 @@
       "date": "4/20 10:10",
       "content": "动态描述动态描述动态描述动态描述动态描述动态描述",
       "img": "/static/image/banner.jpg"
+    },
+    {
+      "type": "news",
+      "id": 1,
+      "title": "新闻名称",
+      "date": "4/20 10:10",
+      "content": "动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述"
+    },
+    {
+      "type": "goods",
+      "id": 1,
+      "title": "产品名称",
+      "date": "4/20 10:10",
+      "content": "动态描述动态描述动态描述动态描述动态描述动态描述",
+      "img": "/static/image/banner.jpg"
     }
   ],
   "goodsItems": [
