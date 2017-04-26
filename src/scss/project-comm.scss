@@ -68,7 +68,7 @@ body {
   background-color: $orange-dark;
   opacity: 1;
 }
-.mint-cell i { margin-right: 0; }
+.mint-cell .mint-cell-allow-right { margin-right: 0; }
 .mint-cell-text {  vertical-align: inherit; }
 
 
@@ -263,6 +263,7 @@ body {
 }
 
 .company-info-wrap {
+  display: block;
   padding: 10px 15px;
   .company-info-box {
     display: flex;
@@ -290,3 +291,74 @@ body {
     text-indent: -5em;
   }
 }
+
+// 钻石，黄金，VIP会员，认证等样式
+.grade-info {
+  display: inline-block;
+  [class^="icon-"], [class*=" icon-"],
+  [class^="myicon-"], [class*=" myicon-"] {
+    display: inline-block;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5em;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 100%;
+    color: #FFFFFF;
+  }
+  .icon-vip-o {
+    background-color: green;
+  }
+  .icon-crown-o {
+    background-color: $brand-warning;
+  }
+  .icon-diamond {
+    background-color: #1F76ED;
+  }
+
+  .word-ico {
+    height: 22px;
+    line-height: 22px;
+    margin-right: 0;
+    border-radius: 3px;
+    font-size: 15px;
+    background-color: #990000;
+    color: #fadf6b;
+  }
+}
+
+// 消息流样式（动态）
+.trends-item {
+  background-color: #FFFFFF;
+  margin-bottom: 8px;
+  padding: 12px 12px 3px;
+  .media-small-imgtxt {
+    margin-bottom: 8px;
+    .ico-box {
+      margin-top: 3px;
+      text-align: center;
+      color: #FFFFFF;
+      border: none;
+      border-radius: 5px;
+      [class^="icon-"], [class*=" icon-"] {
+        font-size: 24px;
+        vertical-align: middle;
+      }
+    }
+
+  }
+
+  .content {
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+  .detail-btn {
+    display: block;
+    line-height: 3;
+    text-align: center;
+    margin-top: 8px;
+    color: #1F76ED;
+    @include slenderBorder($dir: top);
+  }
+}
+

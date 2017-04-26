@@ -92,44 +92,13 @@
   @import "../scss/_mixins.scss";
 
   #trends-page {
-    .trends-item {
-      background-color: #FFFFFF;
-      margin-bottom: 8px;
-      padding: 12px 12px 3px;
-      .content {
-        line-height: 1.6;
-        margin-bottom: 12px;
-      }
-      .detail-btn {
-        display: block;
-        line-height: 3;
-        text-align: center;
-        margin-top: 8px;
-        color: #1F76ED;
-        @include slenderBorder($dir: top);
-      }
-    }
-
-    .media-small-imgtxt {
-      margin-bottom: 8px;
-      .ico-box {
-        margin-top: 3px;
-        text-align: center;
-        color: #FFFFFF;
-        border: none;
-        border-radius: 5px;
-        [class^="icon-"], [class*=" icon-"] {
-          font-size: 24px;
-          vertical-align: middle;
-        }
-      }
-
-    }
+  
     .video-box {
       video {
         width: 100%;
       }
     }
+
   }
 
 </style>

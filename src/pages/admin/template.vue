@@ -1,16 +1,15 @@
 <template>
   <div>
 
-
   </div>
 </template>
 
 <script>
 
-  import apiData from '../api';
+  import apiData from '../../api';
 
   export default {
-    name: 'admin',
+    name: 'template',
 
     data () {
       return {
@@ -30,8 +29,8 @@
 
 <style lang="scss">
 
-  @import "../scss/_variables.scss";
-  @import "../scss/_mixins.scss";
+  @import "../../scss/_variables.scss";
+  @import "../../scss/_mixins.scss";
 
 
 

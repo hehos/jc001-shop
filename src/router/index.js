@@ -17,7 +17,11 @@ import intro from '@/pages/intro';
 import lce from '@/pages/lce';
 import casus from '@/pages/casus';
 import card from '@/pages/card';
-import admin from '@/pages/admin';
+import cardEdit from '@/pages/card-edit';
+
+import admin from '@/pages/admin/index.vue';
+import setting from '@/pages/admin/setting.vue';
+import companyInfo from '@/pages/admin/company-info.vue';
 
 Vue.use(Router);
 
@@ -138,13 +142,38 @@ export default new Router({
         default: card
       }
     },
+    {
+      path: '/card-edit',
+      name: 'cardEdit',
+      components: {
+        // header: header,
+        default: cardEdit
+      }
+    },
 
+    // -----------------------------------------
     // 后台 admin
     {
       path: '/admin',
       name: 'admin',
       components: {
         default: admin
+      }
+    },
+    {
+      path: '/setting',
+      name: 'setting',
+      components: {
+        header: header,
+        default: setting
+      }
+    },
+    {
+      path: '/company-info',
+      name: 'companyInfo',
+      components: {
+        header: header,
+        default: companyInfo
       }
     }
   ]

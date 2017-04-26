@@ -9,7 +9,7 @@
 
 
     <div class="info-title"><strong>认证信息</strong></div>
-    <div class="margin-b-8 white-bg info-grade">
+    <div class="margin-b-8 white-bg grade-info">
       <span class="info-item" v-if="vipGrade">
         <i :class="vipGrade.icon"></i>
         <i class="icon-vip-o"></i>
@@ -18,8 +18,12 @@
         {{ vipGrade.text }}
         <span><em>{{ info.age }}</em>年</span>
       </span>
-      <span class="info-item" v-if="info.hasBao"><i class="word-ico">宝</i></span>
-      <span class="info-item" v-if="info.hasLce"><i class="icon-rz-firm word-ico"></i></span>
+      <span class="info-item" v-if="info.hasBao">
+        <i class="myicon-word">宝</i>
+      </span>
+      <span class="info-item" v-if="info.hasLce">
+        <i class="icon-rz-firm word-ico"></i>
+      </span>
     </div>
 
     <div class="info-title"><strong>工商注册信息</strong></div>
@@ -95,45 +99,12 @@
       margin: 20px 12px 12px;
     }
 
-    .info-grade {
+    .grade-info {
       padding: 10px 12px;
       .info-item {
         display: inline-block;
         margin-right: 10px;
         padding: 5px;
-      }
-      // 钻石，黄金，VIP会员图片样式
-      .icon-vip-o,
-      .icon-crown-o,
-      .icon-diamond,
-      .word-ico {
-        display: inline-block;
-        width: 25px;
-        height: 25px;
-        line-height: 25px;
-        text-align: center;
-        font-size: 16px;
-        border-radius: 100%;
-        color: #FFFFFF;
-      }
-      .icon-vip-o {
-        background-color: green;
-      }
-      .icon-crown-o {
-        background-color: $brand-warning;
-      }
-      .icon-diamond {
-        background-color: #1F76ED;
-      }
-
-      .word-ico {
-        height: 22px;
-        line-height: 22px;
-        margin-right: 0;
-        border-radius: 3px;
-        font-size: 15px;
-        background-color: #990000;
-        color: #fadf6b;
       }
     }
   }

@@ -46,7 +46,7 @@ em {
 i {
   margin-right: 5px;
 }
-i ~ em { margin-left: 0; }
+i + em { margin-left: 0; }
 
 img {
   max-width: 100%;
@@ -67,6 +67,7 @@ img {
   overflow: hidden;
   img {
     display: inline-block;
+    width: 100%;
     vertical-align: middle;
   }
 }
