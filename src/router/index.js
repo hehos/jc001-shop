@@ -17,11 +17,11 @@ import intro from '@/pages/intro';
 import lce from '@/pages/lce';
 import casus from '@/pages/casus';
 import card from '@/pages/card';
-import cardEdit from '@/pages/card-edit';
 
 import admin from '@/pages/admin/index.vue';
 import setting from '@/pages/admin/setting.vue';
 import companyInfo from '@/pages/admin/company-info.vue';
+import cardManage from '@/pages/admin/card-manage';
 
 Vue.use(Router);
 
@@ -143,11 +143,11 @@ export default new Router({
       }
     },
     {
-      path: '/card-edit',
-      name: 'cardEdit',
+      path: '/card-manage',
+      name: 'cardManage',
       components: {
         // header: header,
-        default: cardEdit
+        default: cardManage
       }
     },
 

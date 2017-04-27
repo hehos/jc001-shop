@@ -3,7 +3,7 @@
 
     <div class="white-bg margin-b-8 block-wrap">
       <mt-cell title="企业信息" is-link to="/company-info"></mt-cell>
-      <mt-cell title="企业名片" is-link to="/card"></mt-cell>
+      <mt-cell title="企业名片" is-link to="/card-manage"></mt-cell>
       <mt-cell title="荣誉证书" is-link></mt-cell>
       <mt-cell title="成功案例" is-link></mt-cell>
     </div>

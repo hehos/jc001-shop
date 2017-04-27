@@ -30,12 +30,27 @@
     .job-coll {
       display: inline-block;
       vertical-align: sub;
+      margin-left: 5px;
       font-size: 14px;
       color: $gray-light2;
     }
     .mobile-row {
       color: $brand-danger;
       font-size: 16px;
+    }
+  }
+  .company-state {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 15px 10px;
+    text-align: center;
+    [class^="icon-"], [class*=" icon-"] {
+      font-size: 18px;
+      color: $gray2;
+    }
+    .ico-text {
+      margin-top: 10px;
     }
   }
 
@@ -50,5 +65,33 @@
   }
   .user-name input {
     width: 45%;
+  }
+  .mobile-row input {
+    color: $gray-dark;
+  }
+
+  .cardcase-item {
+    .mint-cell-wrapper {
+      padding-top: 10px;
+      padding-bottom: 10px;
+      background-image: none;
+      background-color: #FFFFFF;
+    }
+    .mint-cell-title {
+      margin-top: 5px;
+    }
+  }
+  .cardcase-ico-box {
+    float: left;
+    width: 1.5em;
+    height: 1.5em;
+    line-height: 1.5;
+    text-align: center;
+    margin-right: .5em;
+    margin-top: -5px;
+    font-size: 30px;
+    border-radius: 100%;
+    color: #FFFFFF;
+    background-color: #44b1cc;
   }
 }

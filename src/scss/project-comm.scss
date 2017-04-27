@@ -76,6 +76,10 @@ body {
   border-left-color: $grayBdLight;
 }
 
+.mint-cell-right {
+  z-index: 10;
+}
+
 // ========================
 // 自定义公用样式
 .mint-header {
