@@ -23,7 +23,7 @@
           <span class="no-grade-info" v-else>
             成为VIP会员获取更多权限
           </span>
-          <router-link class="yewu-detail"  to="/" v-if="isLogin">业务详情</router-link>
+          <router-link class="yewu-detail"  to="/buy" v-if="isLogin">业务详情</router-link>
         </div>
       </div>
     </div>

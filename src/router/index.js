@@ -22,6 +22,7 @@ import admin from '@/pages/admin/index.vue';
 import setting from '@/pages/admin/setting.vue';
 import companyInfo from '@/pages/admin/company-info.vue';
 import cardManage from '@/pages/admin/card-manage';
+import buy from '@/pages/admin/buy.vue';
 
 Vue.use(Router);
 
@@ -174,6 +175,14 @@ export default new Router({
       components: {
         header: header,
         default: companyInfo
+      }
+    },
+    {
+      path: '/buy',
+      name: 'buy',
+      components: {
+        // header: header,
+        default: buy
       }
     }
   ]
