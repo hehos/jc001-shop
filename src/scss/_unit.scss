@@ -110,36 +110,36 @@ body {
 
 // 元素距离
 // margin-t, margin-r, margin-b, margin-l 表示margin上、右、下、左
-$mp-star: 2;
+$mp-start: 2;
 $mp-end: 40;
-@for $i from $mp-star through $mp-end {
+@for $i from $mp-start through $mp-end {
   .margin-#{$i} { margin: ($i / toNum($baseFontSize)) * 1em; }
 }
-@for $i from $mp-star through $mp-end {
+@for $i from $mp-start through $mp-end {
   .margin-t-#{$i} { margin-top: ($i / toNum($baseFontSize)) * 1em; }
 }
-@for $i from $mp-star through $mp-end {
+@for $i from $mp-start through $mp-end {
   .margin-r-#{$i} { margin-right: ($i / toNum($baseFontSize)) * 1em;; }
 }
-@for $i from $mp-star through $mp-end {
+@for $i from $mp-start through $mp-end {
   .margin-b-#{$i} { margin-bottom: ($i / toNum($baseFontSize)) * 1em;; }
 }
-@for $i from $mp-star through $mp-end {
+@for $i from $mp-start through $mp-end {
   .margin-l-#{$i} { margin-left: ($i / toNum($baseFontSize)) * 1em;; }
 }
 // padding-t, padding-r, padding-b, padding-l 表示padding上、右、下、左
-@for $i from $mp-star through $mp-end {
+@for $i from $mp-start through $mp-end {
   .padding-#{$i} { padding: ($i / toNum($baseFontSize)) * 1em; }
 }
-@for $i from $mp-star through $mp-end {
+@for $i from $mp-start through $mp-end {
   .padding-t-#{$i} { padding-top: ($i / toNum($baseFontSize)) * 1em; }
 }
-@for $i from $mp-star through $mp-end {
+@for $i from $mp-start through $mp-end {
   .padding-r-#{$i} { padding-right: ($i / toNum($baseFontSize)) * 1em;; }
 }
-@for $i from $mp-star through $mp-end {
+@for $i from $mp-start through $mp-end {
   .padding-b-#{$i} { padding-bottom: ($i / toNum($baseFontSize)) * 1em;; }
 }
-@for $i from $mp-star through $mp-end {
+@for $i from $mp-start through $mp-end {
   .padding-l-#{$i} { padding-left: ($i / toNum($baseFontSize)) * 1em;; }
 }

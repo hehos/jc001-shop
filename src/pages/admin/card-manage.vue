@@ -11,7 +11,7 @@
 
     <mt-tab-container v-model="selected">
 
-      <mt-tab-container-item id="1">
+      <mt-tab-container-item id="1" v-if="selected === '1'">
 
         <div class="header-avatar-wrap2">
           <div class="avatar-box">
@@ -74,9 +74,9 @@
           </mt-button>
         </div>
 
-      </mt-tab-container-item>
+      </mt-tab-container-item >
 
-      <mt-tab-container-item id="2">
+      <mt-tab-container-item id="2" v-if="selected === '2'">
 
         <mt-cell-swipe
           class="margin-b-8 cardcase-item"
@@ -135,7 +135,7 @@
 
     data () {
       return {
-        selected: '2',
+        selected: '1',
         isPreview: true,
         popupBoxVisible: false,
         info: []

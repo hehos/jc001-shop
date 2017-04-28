@@ -75,4 +75,23 @@
       }
     }
   }
+
+  // 模板列表
+  .grid-tpls {
+    padding: 8px;
+    @include clearfix();
+    .grid-col-item {
+      float: left;
+      width: 46%;
+      padding: 5px;
+      margin: 0 2% 8px;
+      background-color: #FFFFFF;
+      .media-title {
+        padding-left: 5px;
+        padding-right: 5px;
+        border-top: 1px solid $grayBdLight;
+      }
+      .sub-tag { font-size: .9em; }
+    }
+  }
 }

@@ -30,15 +30,15 @@
 
     <div class="white-bg margin-b-8 head-nav">
 
-      <router-link to="/" class="nav-item">
+      <router-link to="/collect" class="nav-item">
         <i class="icon-heart-o" style="background-color: #f68326;"></i>
         我的收藏
       </router-link>
-      <router-link to="/" class="nav-item">
+      <router-link to="/tpls" class="nav-item">
         <i class="icon-laptop" style="background-color: #ffc905;"></i>
         网站装修
       </router-link>
-      <router-link to="/" class="nav-item">
+      <router-link to="/media" class="nav-item">
         <i class="icon-file-movie-o" style="background-color: #db4544;"></i>
         媒体库管理
       </router-link>

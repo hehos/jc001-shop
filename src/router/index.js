@@ -23,6 +23,11 @@ import setting from '@/pages/admin/setting.vue';
 import companyInfo from '@/pages/admin/company-info.vue';
 import cardManage from '@/pages/admin/card-manage';
 import buy from '@/pages/admin/buy.vue';
+import tpls from '@/pages/admin/tpls.vue';
+import tplDetail from '@/pages/admin/tpl-detail.vue';
+import media from '@/pages/admin/media.vue';
+import mediaScenery from '@/pages/admin/media-scenery.vue';
+import collect from '@/pages/admin/collect.vue';
 
 Vue.use(Router);
 
@@ -183,6 +188,46 @@ export default new Router({
       components: {
         // header: header,
         default: buy
+      }
+    },
+    {
+      path: '/tpls',
+      name: 'tpls',
+      components: {
+        header: header,
+        default: tpls
+      }
+    },
+    {
+      path: '/tpl-detail',
+      name: 'tplDetail',
+      components: {
+        header: header,
+        default: tplDetail
+      }
+    },
+    {
+      path: '/media',
+      name: 'media',
+      components: {
+        header: header,
+        default: media
+      }
+    },
+    {
+      path: '/media-scenery',
+      name: 'mediaScenery',
+      components: {
+        header: header,
+        default: mediaScenery
+      }
+    },
+    {
+      path: '/collect',
+      name: 'collect',
+      components: {
+        header: header,
+        default: collect
       }
     }
   ]

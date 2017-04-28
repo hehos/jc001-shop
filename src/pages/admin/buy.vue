@@ -50,6 +50,8 @@
       </label>
     </div>
 
+    <div class="margin-15 gray-light2 cont-center">套餐详情</div>
+
     <mt-button id="bottom-fixed-bar" size="large" type="primary">
       立即订购
     </mt-button>
