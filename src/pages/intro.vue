@@ -19,7 +19,7 @@
         <span><em>{{ info.age }}</em>年</span>
       </span>
       <span class="info-item" v-if="info.hasBao">
-        <i class="myicon-word word-ico">宝</i>
+        <i class="word-ico">宝</i>
       </span>
       <span class="info-item" v-if="info.hasLce">
         <i class="icon-rz-firm word-ico"></i>

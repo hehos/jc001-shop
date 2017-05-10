@@ -1,6 +1,6 @@
 <template>
 
-  <div class="tab-cell" ref="cell"
+  <div class="tab-cell"
     :class="{
       'on': $parent.value === id && isOn ,
       'has-childs': childs
@@ -55,7 +55,9 @@
     },
 
     mounted() {
-      this.maskTop = this.$refs.cell.getBoundingClientRect().top;
+      this.maskTop =
+        this.$parent.$refs.tab.getBoundingClientRect().top +
+        this.$parent.$refs.tab.clientHeight;
     },
     components: {
 

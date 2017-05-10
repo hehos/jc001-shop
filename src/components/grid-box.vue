@@ -19,7 +19,6 @@
     flex-wrap: wrap;
     text-align: center;
     padding: 10px 5px;
-    i { margin-right: 0; }
     .grid-cell {
       flex: 0 1 25%;
       display: flex;
@@ -29,13 +28,13 @@
       margin-bottom: 15px;
     }
     .ico-box {
-    font-size: 40px;
+    font-size: 32px;
       &.isBg {
         color: #fff;
-        width: 1.2em;
-        height: 1.2em;
-        line-height: 1.2em;
-        border-radius: .3em;
+        width: 1.5em;
+        height: 1.5em;
+        line-height: 1.5em;
+        border-radius: .4em;
      }
     }
     .cell-title {

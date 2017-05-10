@@ -9,13 +9,14 @@
         cancel-text="取消"
         placeholder="搜索">
       </mt-search>
-      <div class="mint-header-button is-right">
-        <span><i class="icon-row-list"></i> <i class="icon-cake"></i></span>
+      <div class="mint-header-button is-right" @click="switchShow">
+        <span><i class="icon-row-list" v-if="showIsList"></i>
+          <i class="icon-cake" v-else></i></span>
       </div>
     </header>
 
     <div class="margin-b-8 block-wrap filter-wrap">
-      <span class="f-right" style="line-height: 40px;"
+      <span class="filter-btn"
         @click="filterPopupBox = true">
         筛选
         <i class="icon-filter-o"></i>
@@ -63,18 +64,22 @@
 
     </mt-popup>
 
-    <div class="white-bg media-base" v-for="item in items" :key="item.id">
-      <router-link
-        :to="{ name: 'goodsDetail', params: { id: item.id } }" >
-        <div class="img"><img :src="item.img" alt=""></div>
-        <h5 class="media-title">
-          {{ item.title }}</h5>
-        <div class="media-price">
-          <span class="f-right">平方米</span>
-          <em>价格 <strong>￥{{ item.price }}</strong></em>
-        </div>
-      </router-link>
+
+    <div class="block-wrap media-list">
+      <div class="media-base" v-for="item in items" :key="item.id">
+        <router-link
+          :to="{ name: 'goods', params: { id: item.id } }" >
+          <div class="img"><img :src="item.img" alt=""></div>
+          <h5 class="media-title">
+            {{ item.title }}</h5>
+          <div class="media-price">
+            <span class="f-right">平方米</span>
+            <em> <strong>￥{{ item.price }}</strong></em>
+          </div>
+        </router-link>
+      </div>
     </div>
+
   </div>
 </template>
 
@@ -88,6 +93,7 @@
     data () {
       return {
         searchKey: '',
+        showIsList: false,
 
         filterPopupBox: false,
         cellSelected: -1,
@@ -119,11 +125,16 @@
       }
     },
     created () {
-      let param = {}
-      apiData.goods(param).then(data => {
+      let params = {}
+      apiData.goods(params).then(data => {
         this.items = data.items;
         this.cates = data.cates;
       })
+    },
+    methods: {
+      switchShow() {
+        this.showIsList = !this.showIsList;
+      }
     },
     components: {
     }
@@ -150,6 +161,22 @@
     }
     .labels .label-cell {
       background-color: $grayBdLight;
+    }
+
+    .filter-wrap {
+      position: relative;
+      .filter-btn {
+        position: absolute;
+        line-height: 42px;
+        margin-left: 10px;
+        top: 0;
+        right: 0;
+        z-index: 12;
+      }
+      .tab-wrap {
+        padding-right: 60px;
+        background-color: #FFFFFF;
+      }
     }
   }
 

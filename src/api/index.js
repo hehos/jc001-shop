@@ -33,12 +33,12 @@ let pagesData = {
   post: {}
 };
 
+// 首字母转大写
 // function firstUpperCase(str) {
 //   return str.replace(/( |^)[a-z]/g, (L) => L.toUpperCase()).trim();
 // }
 
 for (let page of  pages) {
-  // var page = firstUpperCase(page);
   pagesData[page] =
     params => {
       return axios.get(`${base}${page}.json`, { params: params }).then(res => {
@@ -48,7 +48,6 @@ for (let page of  pages) {
 }
 
 for (let page of  postPages) {
-  // var page = firstUpperCase(page);
   pagesData.post[page] =
     params => {
       return axios.post(`${base}${page}.json`, params).then(res => {

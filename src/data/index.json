@@ -17,55 +17,7 @@
       "img": "/static/image/banner.jpg"
     }
   ],
-  "trendsItems": [
-    {
-      "type": "news",
-      "id": 1,
-      "title": "新闻名称",
-      "date": "4/20 10:10",
-      "content": "动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述"
-    },
-    {
-      "type": "goods",
-      "id": 1,
-      "title": "产品名称",
-      "date": "4/20 10:10",
-      "content": "动态描述动态描述动态描述动态描述动态描述动态描述",
-      "img": "/static/image/banner.jpg"
-    },
-    {
-      "type": "news",
-      "id": 1,
-      "title": "新闻名称",
-      "date": "4/20 10:10",
-      "content": "动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述"
-    },
-    {
-      "type": "goods",
-      "id": 1,
-      "title": "产品名称",
-      "date": "4/20 10:10",
-      "content": "动态描述动态描述动态描述动态描述动态描述动态描述",
-      "img": "/static/image/banner.jpg"
-    },
-    {
-      "type": "news",
-      "id": 1,
-      "title": "新闻名称",
-      "date": "4/20 10:10",
-      "content": "动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述"
-    },
-    {
-      "type": "goods",
-      "id": 1,
-      "title": "产品名称",
-      "date": "4/20 10:10",
-      "content": "动态描述动态描述动态描述动态描述动态描述动态描述",
-      "img": "/static/image/banner.jpg"
-    }
-  ],
   "goodsItems": [
-
     {
       "id": 1,
       "title": "产品标题产品标题1",
@@ -89,6 +41,136 @@
       "title": "产品标题产品标题3",
       "img": "/static/image/goods.jpg",
       "price": 887
+    },
+    {
+      "id": 2,
+      "title": "产品标题产品标题2",
+      "img": "/static/image/goods.jpg",
+      "price": 889
+    },
+    {
+      "id": 3,
+      "title": "产品标题产品标题3",
+      "img": "/static/image/goods.jpg",
+      "price": 887
+    },
+    {
+      "id": 3,
+      "title": "产品标题产品标题3",
+      "img": "/static/image/goods.jpg",
+      "price": 887
+    },
+    {
+      "id": 2,
+      "title": "产品标题产品标题2",
+      "img": "/static/image/goods.jpg",
+      "price": 889
+    },
+    {
+      "id": 3,
+      "title": "产品标题产品标题3",
+      "img": "/static/image/goods.jpg",
+      "price": 887
+    },
+    {
+      "id": 3,
+      "title": "产品标题产品标题3",
+      "img": "/static/image/goods.jpg",
+      "price": 887
+    },
+    {
+      "id": 2,
+      "title": "产品标题产品标题2",
+      "img": "/static/image/goods.jpg",
+      "price": 889
+    },
+    {
+      "id": 3,
+      "title": "产品标题产品标题3",
+      "img": "/static/image/goods.jpg",
+      "price": 887
+    },
+    {
+      "id": 3,
+      "title": "产品标题产品标题3",
+      "img": "/static/image/goods.jpg",
+      "price": 887
+    },
+    {
+      "id": 2,
+      "title": "产品标题产品标题2",
+      "img": "/static/image/goods.jpg",
+      "price": 889
+    },
+    {
+      "id": 3,
+      "title": "产品标题产品标题3",
+      "img": "/static/image/goods.jpg",
+      "price": 887
+    },
+    {
+      "id": 3,
+      "title": "产品标题产品标题3",
+      "img": "/static/image/goods.jpg",
+      "price": 887
+    },
+    {
+      "id": 2,
+      "title": "产品标题产品标题2",
+      "img": "/static/image/goods.jpg",
+      "price": 889
+    },
+    {
+      "id": 3,
+      "title": "产品标题产品标题3",
+      "img": "/static/image/goods.jpg",
+      "price": 887
+    },
+    {
+      "id": 3,
+      "title": "产品标题产品标题3",
+      "img": "/static/image/goods.jpg",
+      "price": 887
+    }
+  ],
+
+  "trendsItems": [
+    {
+      "type": "photo",
+      "date": "4/20 10:10",
+      "content": "动态描述动态描述动态描述",
+      "img": "/static/image/banner.jpg"
+    },
+    {
+      "type": "news",
+      "id": 1,
+      "title": "新闻名称",
+      "date": "4/20 10:10",
+      "content": "动态描述动态描述动态描述动态描述动态描述动态描述动态描述动态描述"
+    },
+    {
+      "type": "goods",
+      "id": 1,
+      "title": "产品名称",
+      "date": "4/20 10:10",
+      "content": "动态描述动态描述动态描述动态描述动态描述动态描述",
+      "img": "/static/image/banner.jpg"
+    },
+    {
+      "type": "vr",
+      "title": "VR名称",
+      "date": "4/20 10:10",
+      "content": "动态描述动态描述动态描述动态描述动态描述动态描述",
+      "img": "/static/image/banner.jpg",
+      "url": "http://vr.jiuzheng.com/index.php?q=krpano/show&id=23"
+    },
+    {
+      "type": "video",
+      "id": 2,
+      "title": "视频名称",
+      "date": "4/20 10:10",
+      "content": "动态描述动态描述动态描述动态描述动态描述动态描述",
+      "video": "http://www.w3school.com.cn/i/movie.ogg"
     }
   ]
 }

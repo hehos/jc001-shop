@@ -140,26 +140,10 @@
 
     }
   }
-
 </script>
 
 <style lang="scss">
 
-  @import "../scss/_variables";
-  @import "../scss/_mixins";
-
-  #index-page {
-
-    .index-head {
-      background-color: #c40112;
-      color: #FFFFFF;
-    }
-
-    .index-head-nav {
-      color: $gray-dark;
-      background-color: #c40112;
-      color: #ffffff;
-    }
-  }
+  @import "../scss/index.scss";
 
 </style>

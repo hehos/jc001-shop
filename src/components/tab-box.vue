@@ -1,5 +1,5 @@
 <template>
-  <div class="tab-wrap"
+  <div class="tab-wrap" ref="tab"
     :class="cols? 'tab-col-' + cols: ''">
     <slot></slot>
   </div>

@@ -2,6 +2,11 @@
 @import "mixins";
 
 #admin-page {
+
+  .index-head1 {
+    background-color: #b12f0d;
+  }
+
   .avatar-img {
     width: 25px;
     height: 25px;

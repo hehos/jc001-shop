@@ -2,9 +2,9 @@
 
   <div id="admin-page" class="bottom-bar-padding admin-index">
 
-    <div class="head-wrap clearfix  ">
-      <router-link to="/message" class="f-right message-btn" v-if="isLogin">
-        <i class="icon-comment-o2"></i>
+    <div class="index-head1 clearfix  ">
+      <router-link to="/message" class="f-right right-btn" v-if="isLogin">
+        <span class="icon-comment-o2"></span>
         <span class="msg-point-ico"></span>
       </router-link>
       <span class="f-left img logo-box">
@@ -17,7 +17,7 @@
         <h1 class="title" v-else>公司名称</h1>
         <div>
           <span class="grade-info" v-if="isLogin">
-            <i class="icon-vip-o"></i>
+            <i class="icon-vip-o ceneral-ico"></i>
             <span>VIP会员</span><em>8</em>年
           </span>
           <span class="no-grade-info" v-else>
@@ -28,7 +28,7 @@
       </div>
     </div>
 
-    <div class="white-bg margin-b-8 head-nav">
+    <div class="white-bg margin-b-8 index-head-nav1">
 
       <router-link to="/collect" class="nav-item">
         <i class="icon-heart-o" style="background-color: #f68326;"></i>

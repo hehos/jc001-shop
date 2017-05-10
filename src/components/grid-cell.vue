@@ -6,9 +6,9 @@
       <div class="ico-box" :class="iconBg ? 'isBg': ''"
         :style="iconStyle">
         <slot name="icon">
-          <i v-if="icon" :class="icon"></i>
+          <span v-if="icon" :class="icon"></span>
           <img v-else-if="img" :src="img" :alt="title">
-          <i v-else class="icon-shop-o"></i>
+          <span v-else class="icon-shop-o"></span>
         </slot>
 
         <slot name="special-tag"></slot>

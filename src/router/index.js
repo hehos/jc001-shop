@@ -4,6 +4,12 @@ import Router from 'vue-router';
 import header from '@/widget/header'
 import footer from '@/widget/footer'
 import index from '@/pages/index';
+import tpl1 from '@/pages/index-tpl1';
+import tpl2 from '@/pages/index-tpl2';
+import tpl3 from '@/pages/index-tpl3';
+import tpl4 from '@/pages/index-tpl4';
+import tpl5 from '@/pages/index-tpl5';
+import tpl6 from '@/pages/index-tpl6';
 import scenery from '@/pages/scenery';
 import goods from '@/pages/goods';
 import goodsDetail from '@/pages/goods-detail';
@@ -52,6 +58,54 @@ export default new Router({
       name: 'index',
       components: {
         default: index,
+        footer: footer
+      }
+    },
+    {
+      path: '/tpl1',
+      name: 'tpl1',
+      components: {
+        default: tpl1,
+        footer: footer
+      }
+    },
+    {
+      path: '/tpl2',
+      name: 'tpl2',
+      components: {
+        default: tpl2,
+        footer: footer
+      }
+    },
+    {
+      path: '/tpl3',
+      name: 'tpl3',
+      components: {
+        default: tpl3,
+        footer: footer
+      }
+    },
+    {
+      path: '/tpl4',
+      name: 'tpl4',
+      components: {
+        default: tpl4,
+        footer: footer
+      }
+    },
+    {
+      path: '/tpl5',
+      name: 'tpl5',
+      components: {
+        default: tpl5,
+        footer: footer
+      }
+    },
+    {
+      path: '/tpl6',
+      name: 'tpl6',
+      components: {
+        default: tpl6,
         footer: footer
       }
     },
