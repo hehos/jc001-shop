@@ -12,6 +12,7 @@
 
 <script>
 
+  import { mapMutations } from 'vuex'
   import apiData from '../api';
 
   export default {
@@ -22,13 +23,22 @@
         items: []
       }
     },
-    created () {
+    mounted () {
       let param = {}
       apiData.lce(param).then(data => {
         this.items = data.items;
       })
+//      this.$store.commit({
+//        // 调用指定了命名空间的模块
+//        type: 'baseModule/setHeadInfo',
+//        headerTitle: '荣誉证书'
+//      });
+      this.setHeadInfo({ headerTitle: '荣誉证书' });
     },
-    components: {
+    methods: {
+      ...mapMutations('baseModule', [
+        'setHeadInfo'
+      ])
     }
   }
 </script>

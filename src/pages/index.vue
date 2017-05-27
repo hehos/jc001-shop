@@ -1,6 +1,6 @@
 <template>
   <div id="index-page" class="bottom-bar-padding">
-    <div class="index-head">
+    <div class="index-head" @click="$router.push('/scenery')">
       <span class="f-left logo-box"><img :src="info.logo" alt=""></span>
       <span class="f-right ico-box"><span class="icon-heart-o"></span></span>
       <h1 class="company-name">{{ info.company }}</h1>
@@ -21,6 +21,9 @@
       <router-link class="nav-item" to="/lce">荣誉证书</router-link>
       <router-link class="nav-item" to="/casus">成功案例</router-link>
     </div>
+
+
+
     <div class="margin-b-8 white-bg headline-box"
       @click="$router.push('trends')">
       <span class="f-left headline-title">企业动态</span>

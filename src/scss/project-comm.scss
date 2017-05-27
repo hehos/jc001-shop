@@ -404,7 +404,6 @@ body {
 // 头部
 .index-head {
   padding: 10px 12px;
-  line-height: 30px;
   background-color: #ffffff;
   @include clearfix();
   .logo-box {
@@ -422,7 +421,7 @@ body {
     background-color: darken(#c40112, 5%);
   }
   .collect-btn {
-    line-height: 1.7;
+    line-height: 1.6;
     padding: 0 .6em;
     margin-top: 5px;
     color: #ffffff;
@@ -433,8 +432,10 @@ body {
 
   .company-name {
     font-size: 16px;
+    line-height: 28px;
   }
   .head-cont .company-name {
+    margin-bottom: 8px;
     line-height: 1;
     font-size: 15px;
     font-weight: normal;
@@ -442,6 +443,9 @@ body {
   .grade-info, [class^="icon-"], [class*=" icon-"] {
     font-size: 12px;
     background-color: transparent;
+  }
+  .yewu-detail, .no-grade-info {
+    color: #feea77;
   }
 }
 
@@ -562,21 +566,23 @@ body {
     float: left;
     background-color: #FFFFFF;
   }
-  .media-title {
-    line-height: 1.6;
-    margin-bottom: 5px;
+  .img {
+    border: none;
+    background-position: center;
+    background-size: cover;
   }
+
   .big-media {
     margin-right: 2%;
     padding: 5px 10px 10px;
     margin-bottom: 0;
     width: 43%;
     .img {
-      height: 82px;
+      height: 68px;
       border-radius: 5px;
-      border: 2px solid $grayBorder;
-      background-position: center;
-      background-size: cover;
+    }
+    .media-explain {
+      height: 4.5em;
     }
   }
   .media-small-imgtxt {
@@ -590,7 +596,6 @@ body {
       width: 72px;
       height: 72px;
       line-height: middleImg(72px, 4px);
-      border: 2px solid #DDDDDD;
       border-radius: 50%;
     }
     &:last-child {
@@ -599,14 +604,16 @@ body {
   }
 
   .media-title {
-    font-weight: bold;
-    font-size: 1.2em;
+    line-height: 1.6;
+    margin-bottom: 5px;
+    font-size: 15px;
     font-family: inherit;
   }
   .media-explain {
     line-height: 1.5;
     height: 3em;
     overflow: hidden;
+    margin-bottom: .5em;
     font-size: 13px;
     color: lighten($gray2, 5%);
   }

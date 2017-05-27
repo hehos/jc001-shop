@@ -6,7 +6,8 @@ import Vue from 'vue'
 import Vuex from 'vuex'
 Vue.use(Vuex)
 
-export default new Vuex.Store({
+const baseModule = {
+  namespaced: true,
   state: {
     headerTitle: '001商铺',
     headerLeftText: '',
@@ -18,5 +19,11 @@ export default new Vuex.Store({
     setHeadInfo (state, obj) {
       window.Object.assign(state, obj);
     }
+  }
+}
+
+export default new Vuex.Store({
+  modules: {
+    baseModule
   }
 })

@@ -1,10 +1,28 @@
 <template>
-  <div id="index-page" class="bottom-bar-padding">
+  <div id="index-page-tpl6" class="bottom-bar-padding">
+
     <div class="index-head">
       <span class="f-left logo-box"><img :src="info.logo" alt=""></span>
-      <span class="f-right ico-box"><span class="icon-heart-o"></span></span>
-      <h1 class="company-name">{{ info.company }}</h1>
+      <span class="f-right collect-btn">
+        <i class="icon-heart-o"></i>收藏
+      </span>
+      <div class="head-cont">
+        <h1 class="company-name" v-if="isLogin">某某某某有限公司</h1>
+        <h1 class="company-name" v-else>公司名称</h1>
+        <div>
+          <span class="grade-info" v-if="isLogin">
+            <i class="icon-vip-o"></i>
+            <i><span>VIP会员</span><em>8</em>年</i>
+            <i class="icon-check-circle" style="color: #7ac814;"></i>
+            <i class="icon-rz-firm"></i>
+          </span>
+          <span class="no-grade-info" v-else>
+            成为VIP会员获取更多权限
+          </span>
+        </div>
+      </div>
     </div>
+
     <div class="white-bg index-banner">
       <mt-swipe :auto="4000" style="height: 180px;">
         <mt-swipe-item v-for="item in bannerItems" :key="item.id"
@@ -21,70 +39,33 @@
       <router-link class="nav-item" to="/lce">荣誉证书</router-link>
       <router-link class="nav-item" to="/casus">成功案例</router-link>
     </div>
-    <div class="margin-b-8 white-bg headline-box"
-      @click="$router.push('trends')">
-      <span class="f-left headline-title">企业动态</span>
-      <span class="f-right headline-more">
-        <i class="icon-angle-right3"></i>
-      </span>
-      <swiper class="headline-items" :options="headlineOption">
-
-        <swiper-slide class="headline-item"
-          v-for="i in Math.ceil(trendsItems.length/2)" :key="i">
-          <div class="item-cont"
-            v-for="item in trendsItems.slice((i-1)*2, i*2)"
-            :key="item.id"
-            :to="{ name: 'trends', params: { id: item.id } }">
-            {{ item.content }}
-          </div>
-        </swiper-slide>
-
-      </swiper>
-    </div>
 
     <div class="margin-b-8 media-nav-box">
-      <div class="media-base big-media">
+      <div class="big-media">
         <router-link :to="{ name: 'scenery' }" >
-          <h5 class="media-title">
-            公司<em>实景</em></h5>
-          <p class="media-explain">
-            实景介绍实景介绍实景介绍实景介绍实景介绍实景介绍实景介绍
-          </p>
-          <div class="img"
-               style="background-image: url(/static/image/banner.jpg)"></div>
+          <img src="/static/image/media-nav1.jpg" alt="">
+          <p class="big-media-text">执念门窗系统秉承严谨、创新的执念门窗系统秉承严 谨、创新的理念理念秉承严谨现代</p>
         </router-link>
       </div>
 
-      <div class="media-small-imgtxt">
+      <div class="small-media">
         <router-link :to="{ name: 'scenery' }" >
-          <div class="img"><img src="/static/image/cover.jpg" alt=""></div>
-          <h5 class="media-title">
-            企业<em>画册</em></h5>
-          <p class="media-explain">
-            画册介绍画册介绍画册介绍画册介绍画册介绍画册介绍画册介绍
-          </p>
+          <img src="/static/image/media-nav2.jpg" alt="">
         </router-link>
       </div>
 
 
-      <div class="media-small-imgtxt">
+      <div class="small-media">
         <router-link :to="{ name: 'scenery' }" >
-          <div class="img"><img src="/static/image/cover.jpg" alt=""></div>
-          <h5 class="media-title">
-            企业<em>视频</em></h5>
-          <p class="media-explain">
-            视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍视频介绍
-          </p>
+          <img src="/static/image/media-nav3.jpg" alt="">
         </router-link>
       </div>
     </div>
 
     <div class="block-wrap media-list">
-      <router-link class="title-bar" to="/goods">
-          <h2 class="title">主营产品</h2>
-          <span class="more">
-          <i class=" icon-angle-right"></i>
-        </span>
+      <router-link class="title-row" to="/goods">
+        <h3 class="title-text">主营产品</h3>
+        <div class="title-en">The   company's   main   products</div>
       </router-link>
 
       <div class="block-cont">
@@ -92,12 +73,12 @@
           <router-link
             :to="{ name: 'goodsDetail', params: { id: item.id } }" >
             <div class="img"><img :src="item.img" alt=""></div>
-            <h5 class="media-title">
-              {{ item.title }}</h5>
             <div class="media-price">
               <span class="f-right">平方米</span>
-              <em> <strong>￥{{ item.price }}</strong></em>
+              <em><strong>RMB&nbsp;{{ item.price }}</strong></em>
             </div>
+            <h5 class="media-title">
+              {{ item.title }}</h5>
           </router-link>
         </div>
       </div>
@@ -114,6 +95,7 @@
 
     data () {
       return {
+        isLogin: true,
         info: {},
         bannerItems: [],
         trendsItems: [],
@@ -144,6 +126,110 @@
 
 <style lang="scss">
 
-  @import "../scss/index.scss";
+  @import "../scss/_variables";
+  @import "../scss/_mixins";
+
+  #index-page-tpl6 {
+
+    $themeColor: #616161;
+
+    .index-head {
+      padding: 8px 10px;
+      background-color: $themeColor;
+      color: #ffffff;
+      .logo-box {
+        width: 35px;
+        height: 35px;
+        border-radius: 15px;
+        overflow: hidden;
+      }
+      .collect-btn {
+        background-color: lighten($themeColor, 10%);
+      }
+    }
+
+    .index-head-nav {
+      background-color: lighten($themeColor, 5%);
+      color: #eceaeb;
+    }
+
+    .media-nav-box {
+      @include clearfix();
+      .big-media, .small-media {
+        float: left;
+      }
+      img {
+        width: 100%;
+        height: 100%;
+      }
+      .big-media {
+        position: relative;
+        padding: 0;
+        width: 63%;
+        height: 235px;
+        margin-right: 1%;
+      }
+      .big-media-text {
+        position: absolute;
+        top: 10px;
+        left: 10px;
+        right: 10px;
+        line-height: 1.8;
+        font-family: "microsoft yahei", simsun;
+        font-size: 12px;
+        color: #ffffff;
+      }
+      .small-media {
+        width: 36%;
+        height: 115px;
+        &:last-child {
+          margin-top: 5px;
+        }
+      }
+    }
+
+    .media-list {
+      font-family: "microsoft yahei", simsun;
+      .title-row {
+        display: block;
+        text-align: center;
+        padding: 15px 0 25px;
+        background-color: #393834;
+      }
+      .title-text {
+        margin: 20px 0;
+        font-size: 46px;
+        color: #b0afae;
+        font-weight: normal;
+      }
+      .title-en {
+        line-height: 1.8;
+        margin: 0 40px;
+        color: #a8a8a6;
+        border: 2px solid #898885;
+        border-width: 2px 0;
+      }
+
+      .block-cont {
+        margin: 0 5px;
+      }
+      .media-base {
+        border:none;
+        width: 48%;
+        margin: 0 1% 10px;
+      }
+      .media-title {
+        font-size: 14px;
+        color: $gray;
+      }
+      .media-price {
+        margin-top: 10px;
+        padding-bottom: 0;
+      }
+      em {
+        color: $themeColor;
+      }
+    }
+  }
 
 </style>

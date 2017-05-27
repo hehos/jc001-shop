@@ -22,7 +22,6 @@
       </div>
     </div>
 
-
     <div class="white-bg index-banner">
       <mt-swipe :auto="4000" style="height: 180px;">
         <mt-swipe-item v-for="item in bannerItems" :key="item.id"

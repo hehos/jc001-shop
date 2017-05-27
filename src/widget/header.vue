@@ -27,7 +27,7 @@
       }
     },
     created: function () {
-      this.state = this.$store.state;
+      this.state = this.$store.state.baseModule;
     }
   }
 
