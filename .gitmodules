@@ -1,6 +1,0 @@
-[submodule "src/assets/jzfont"]
-	path = src/assets/jzfont
-	url = work:repositories/vendors/jzfont.git
-[submodule "widget"]
-	path = widget
-	url = work:repositories/project/widget.git
