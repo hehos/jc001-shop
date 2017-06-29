@@ -52,12 +52,13 @@
     text-align: center;
     line-height: 3;
 
-    & + .tab-cell .tab-cell-text:before {
+    .tab-cell-text:before {
       left: 0;
       height: 1em;
       margin-top: -.5em;
       border-left: 1px solid $grayBdLight;
     }
+    &:first-child:before { display: none; }
 
     &.on {
       .tab-cell-text {

@@ -8,7 +8,7 @@
       <div class="media-small-imgtxt">
         <div class="img ico-box"
           :style="{ 'background-color': itemsCfg[item.type].iconColor }">
-          <span :class="itemsCfg[item.type].icon"></span>
+          <span :class="itemsCfg[item.type].icon" class="ico"></span>
         </div>
         <div class="media-txt">
           <h5 class="media-title">

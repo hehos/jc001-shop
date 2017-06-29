@@ -161,7 +161,7 @@
   #index-page-tpl3 {
     $themeColor: #0392a2;
 
-    .index-head, & + #footer .mint-tabbar {
+    .index-head, &  #footer .mint-tabbar {
       background-color: #2f3237;
     }
     .index-head {
@@ -171,7 +171,7 @@
         color: $activeColor;
       }
     }
-    & + #footer .mint-tabbar {
+    &  #footer .mint-tabbar {
       color: #fffdfc;
     }
 

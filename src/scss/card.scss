@@ -45,7 +45,7 @@
     justify-content: space-around;
     padding: 15px 10px;
     text-align: center;
-    [class^="icon-"], [class*=" icon-"] {
+    .icon {
       font-size: 18px;
       color: $gray2;
     }

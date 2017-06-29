@@ -1,7 +1,6 @@
 // =========================
 // begin  适合所有项目的通用性
 
-* { box-sizing: border-box; }
 body {
   font-size: $baseFontSize;
   color: $gray-dark;
@@ -53,34 +52,6 @@ img {
   max-height: 100%;
 }
 
-// sprite comm style
-[class^="myicon-"],
-[class*=" myicon-"] {
-  display: inline-block;
-  vertical-align: middle;
-}
-
-// global img
-.thumbnail, .img, .thumb {
-  display: block;
-  text-align: center;
-  overflow: hidden;
-  background-size: cover;
-  background-position: center;
-  img {
-    display: inline-block;
-    width: 100%;
-    vertical-align: middle;
-  }
-}
-
-// global display: table-cell 时的左中右布局
-.layout-left, .layout-body, .layout-right {
-  display: table-cell;
-  vertical-align: top;
-}
-/* 宽度自适应宽度 */
-.layout-body { width: 10000px; }
 
 // 小功能
 .f-left {
@@ -94,62 +65,4 @@ img {
 }
 .text-ellipsis {
   @include text-truncate();
-}
-
-input, textarea {
-  padding: pxToEm(6px) pxToEm(10px);
-  color: inherit;
-  border: 1px solid $grayBorder;
-  &::-webkit-input-placeholder { color: $gray-light2; }
-}
-// 有单位的输入框
-.form-unit-box {
-  position: relative;
-  input { padding-right: 2.4em; }
-  .unit {
-    position: absolute;
-    right: 0;
-    top: pxToEm(6px);
-    width: 2em;
-  }
-}
-// 数量增减输入框
-.form-ctrl-num, .form-ctrl-num2 {
-  display: inline-block;
-  overflow: hidden;
-  vertical-align: middle;
-  border: 1px solid $grayBorder;
-  color: $gray-light;
-  input { width: 4em; }
-  b {
-    display: inline-block;
-    vertical-align: middle;
-    cursor: pointer;
-  }
-}
-.form-ctrl-num {
-  input { border-width: 0 1px; }
-  b {
-    padding: 0 5px;
-    font-size: pxToEm(20px);
-  }
-}
-.form-ctrl-num2 {
-  position: relative;
-  height: 32px;
-  padding-right: 24px;
-  input { border-width: 0 1px 0 0; }
-  b {
-    position: absolute;
-    right: 0;
-    bottom: 1px;
-    height: 15px;
-    line-height: 15px;
-    width: 24px;
-    text-align: center;
-    &:first-child {
-      top: 1px;
-      border-bottom: 1px solid $grayBorder;
-    }
-  }
 }
