@@ -1,6 +1,6 @@
 <template>
   <div id="index-page" class="bottom-bar-padding">
-    <div class="index-head" @click="$router.push('/scenery')">
+    <div class="index-head">
       <span class="f-left logo-box"><img :src="info.logo" alt=""></span>
       <span class="f-right ico-box"><span class="icon-heart-o"></span></span>
       <h1 class="company-name">{{ info.company }}</h1>

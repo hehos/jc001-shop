@@ -245,7 +245,6 @@ body {
     z-index: 9;
     $juli: 2px;
     left: $juli;
-    right: $juli;
     top: $juli;
     bottom: $juli;
     border: 1px solid #dcdcdc;
@@ -636,7 +635,7 @@ body {
     font-size: 18px;
     color: $orange-dark;
     font-weight: bold;
-    font-family: "Adobe 黑体 Std R";
+    font-family: Microsoft YaHei, Microsoft JhengHei, STHeiti, MingLiu;
   }
 
   .headline-more {
