@@ -5,13 +5,13 @@ import router from './router';
 import store from './store';
 
 import '@/scss/comm.scss';
-import 'mint-ui/lib/style.css';
+// import 'mint-ui/lib/style.css';
 
 import MintUI from 'mint-ui';
 Vue.use(MintUI);
 
-import JUI from './j-ui';
-Vue.use(JUI);
+// import JUI from './j-ui';
+// Vue.use(JUI);
 
 import App from './App.vue';
 

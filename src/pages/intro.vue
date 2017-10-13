@@ -11,10 +11,10 @@
     <div class="info-title"><strong>认证信息</strong></div>
     <div class="margin-b-8 white-bg grade-info" style="display: block;">
       <span class="info-item" v-if="vipGrade">
-        <i :class="vipGrade.icon" class="ceneral-ico"></i>
-        <i class="icon-vip-o ceneral-ico"></i>
-        <i class="icon-crown-o ceneral-ico"></i>
-        <i class="icon-diamond ceneral-ico"></i>
+        <i :class="vipGrade.icon" class="ico ceneral-ico"></i>
+        <i class="ico icon-vip-o ceneral-ico"></i>
+        <i class="ico icon-crown-o ceneral-ico"></i>
+        <i class="ico icon-diamond ceneral-ico"></i>
         {{ vipGrade.text }}
         <span><em>{{ info.age }}</em>年</span>
       </span>

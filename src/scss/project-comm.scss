@@ -26,9 +26,9 @@ body {
   }
   &.is-fixed {
     z-index: 2;
-    & + * {
-      padding-top: 48px;
-    }
+    //& + * {
+    //  padding-top: 48px;
+    //}
   }
   .right-link {
     font-size: 14px;
@@ -155,9 +155,9 @@ body {
     margin: 10px 10px;
     padding-top: 10px;
   }
-  .title-bar + .block-cont {
-    padding-top: 0;
-  }
+  //.title-bar + .block-cont {
+  //  padding-top: 0;
+  //}
 }
 .title-bar {
   display: block;
@@ -245,7 +245,6 @@ body {
     z-index: 9;
     $juli: 2px;
     left: $juli;
-    right: $juli;
     top: $juli;
     bottom: $juli;
     border: 1px solid #dcdcdc;
@@ -323,7 +322,6 @@ body {
     background-color: #1F76ED;
   }
 
-  [class^="myicon-"], [class*=" myicon-"],
   .word-ico {
     margin-right: 0;
     border-radius: 3px;
@@ -346,7 +344,7 @@ body {
       color: #FFFFFF;
       border: none;
       border-radius: 5px;
-      [class^="icon-"], [class*=" icon-"] {
+      .ico {
         font-size: 24px;
         vertical-align: middle;
       }
@@ -440,7 +438,7 @@ body {
     font-size: 15px;
     font-weight: normal;
   }
-  .grade-info, [class^="icon-"], [class*=" icon-"] {
+  .grade-info, .ico {
     font-size: 12px;
     background-color: transparent;
   }
@@ -474,7 +472,7 @@ body {
     padding: 2px 5px;
     margin-right: 5px;
     font-size: 12px;
-    [class^="icon-"], [class*=" icon-"] {
+    .ico {
       font-size: 14px;
       width: 1.3em;
       height: 1.3em;
@@ -544,7 +542,7 @@ body {
     margin-top: -1px;
     margin-left: -1px;
   }
-  [class^="icon-"], [class*=" icon-"] {
+  .ico {
     display: inline-block;
     width: 1.7em;
     height: 1.7em;
@@ -636,7 +634,7 @@ body {
     font-size: 18px;
     color: $orange-dark;
     font-weight: bold;
-    font-family: "Adobe 黑体 Std R";
+    font-family: Microsoft YaHei, Microsoft JhengHei, STHeiti, MingLiu;
   }
 
   .headline-more {

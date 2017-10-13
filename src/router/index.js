@@ -24,22 +24,22 @@ import lce from '@/pages/lce';
 import casus from '@/pages/casus';
 import card from '@/pages/card';
 
-import admin from '@/pages/admin/index.vue';
-import setting from '@/pages/admin/setting.vue';
-import companyInfo from '@/pages/admin/company-info.vue';
-import cardManage from '@/pages/admin/card-manage';
-import buy from '@/pages/admin/buy.vue';
-import tpls from '@/pages/admin/tpls.vue';
-import tplDetail from '@/pages/admin/tpl-detail.vue';
-import media from '@/pages/admin/media.vue';
-import mediaScenery from '@/pages/admin/media-scenery.vue';
-import mediaAlbum from '@/pages/admin/media-album.vue';
-import mediaPhoto from '@/pages/admin/media-photo.vue';
-import mediaVideo from '@/pages/admin/media-video.vue';
-import mediaNews from '@/pages/admin/media-news.vue';
-import statistics from '@/pages/admin/statistics.vue';
-import message from '@/pages/admin/message.vue';
-import collect from '@/pages/admin/collect.vue';
+// import admin from '@/pages/admin/index.vue';
+// import setting from '@/pages/admin/setting.vue';
+// import companyInfo from '@/pages/admin/company-info.vue';
+// import cardManage from '@/pages/admin/card-manage';
+// import buy from '@/pages/admin/buy.vue';
+// import tpls from '@/pages/admin/tpls.vue';
+// import tplDetail from '@/pages/admin/tpl-detail.vue';
+// import media from '@/pages/admin/media.vue';
+// import mediaScenery from '@/pages/admin/media-scenery.vue';
+// import mediaAlbum from '@/pages/admin/media-album.vue';
+// import mediaPhoto from '@/pages/admin/media-photo.vue';
+// import mediaVideo from '@/pages/admin/media-video.vue';
+// import mediaNews from '@/pages/admin/media-news.vue';
+// import statistics from '@/pages/admin/statistics.vue';
+// import message from '@/pages/admin/message.vue';
+// import collect from '@/pages/admin/collect.vue';
 
 Vue.use(Router);
 
@@ -207,136 +207,136 @@ export default new Router({
         // header: header,
         default: card
       }
-    },
-    {
-      path: '/card-manage',
-      name: 'cardManage',
-      components: {
-        // header: header,
-        default: cardManage
-      }
-    },
+    }
 
     // -----------------------------------------
     // 后台 admin
-    {
-      path: '/admin',
-      name: 'admin',
-      components: {
-        default: admin
-      }
-    },
-    {
-      path: '/setting',
-      name: 'setting',
-      components: {
-        header: header,
-        default: setting
-      }
-    },
-    {
-      path: '/company-info',
-      name: 'companyInfo',
-      components: {
-        header: header,
-        default: companyInfo
-      }
-    },
-    {
-      path: '/buy',
-      name: 'buy',
-      components: {
-        // header: header,
-        default: buy
-      }
-    },
-    {
-      path: '/tpls',
-      name: 'tpls',
-      components: {
-        header: header,
-        default: tpls
-      }
-    },
-    {
-      path: '/tpl-detail',
-      name: 'tplDetail',
-      components: {
-        header: header,
-        default: tplDetail
-      }
-    },
-    {
-      path: '/media',
-      name: 'media',
-      components: {
-        header: header,
-        default: media
-      }
-    },
-    {
-      path: '/media-scenery',
-      name: 'mediaScenery',
-      components: {
-        // header: header,
-        default: mediaScenery
-      }
-    },
-    {
-      path: '/media-album',
-      name: 'mediaAlbum',
-      components: {
-        header: header,
-        default: mediaAlbum
-      }
-    },
-    {
-      path: '/media-photo',
-      name: 'mediaPhoto',
-      components: {
-        header: header,
-        default: mediaPhoto
-      }
-    },
-    {
-      path: '/media-video',
-      name: 'mediaVideo',
-      components: {
-        header: header,
-        default: mediaVideo
-      }
-    },
-    {
-      path: '/media-news',
-      name: 'mediaNews',
-      components: {
-        // header: header,
-        default: mediaNews
-      }
-    },
-    {
-      path: '/message',
-      name: 'message',
-      components: {
-        header: header,
-        default: message
-      }
-    },
-    {
-      path: '/statistics',
-      name: 'statistics',
-      components: {
-        header: header,
-        default: statistics
-      }
-    },
-    {
-      path: '/collect',
-      name: 'collect',
-      components: {
-        header: header,
-        default: collect
-      }
-    }
+    // {
+    //   path: '/admin',
+    //   name: 'admin',
+    //   components: {
+    //     default: admin
+    //   }
+    // },
+    // {
+    //   path: '/setting',
+    //   name: 'setting',
+    //   components: {
+    //     header: header,
+    //     default: setting
+    //   }
+    // },
+    // {
+    //   path: '/company-info',
+    //   name: 'companyInfo',
+    //   components: {
+    //     header: header,
+    //     default: companyInfo
+    //   }
+    // },
+    // {
+    //   path: '/card-manage',
+    //   name: 'cardManage',
+    //   components: {
+    //     // header: header,
+    //     default: cardManage
+    //   }
+    // },
+    // {
+    //   path: '/buy',
+    //   name: 'buy',
+    //   components: {
+    //     // header: header,
+    //     default: buy
+    //   }
+    // },
+    // {
+    //   path: '/tpls',
+    //   name: 'tpls',
+    //   components: {
+    //     header: header,
+    //     default: tpls
+    //   }
+    // },
+    // {
+    //   path: '/tpl-detail',
+    //   name: 'tplDetail',
+    //   components: {
+    //     header: header,
+    //     default: tplDetail
+    //   }
+    // },
+    // {
+    //   path: '/media',
+    //   name: 'media',
+    //   components: {
+    //     header: header,
+    //     default: media
+    //   }
+    // },
+    // {
+    //   path: '/media-scenery',
+    //   name: 'mediaScenery',
+    //   components: {
+    //     // header: header,
+    //     default: mediaScenery
+    //   }
+    // },
+    // {
+    //   path: '/media-album',
+    //   name: 'mediaAlbum',
+    //   components: {
+    //     header: header,
+    //     default: mediaAlbum
+    //   }
+    // },
+    // {
+    //   path: '/media-photo',
+    //   name: 'mediaPhoto',
+    //   components: {
+    //     header: header,
+    //     default: mediaPhoto
+    //   }
+    // },
+    // {
+    //   path: '/media-video',
+    //   name: 'mediaVideo',
+    //   components: {
+    //     header: header,
+    //     default: mediaVideo
+    //   }
+    // },
+    // {
+    //   path: '/media-news',
+    //   name: 'mediaNews',
+    //   components: {
+    //     // header: header,
+    //     default: mediaNews
+    //   }
+    // },
+    // {
+    //   path: '/message',
+    //   name: 'message',
+    //   components: {
+    //     header: header,
+    //     default: message
+    //   }
+    // },
+    // {
+    //   path: '/statistics',
+    //   name: 'statistics',
+    //   components: {
+    //     header: header,
+    //     default: statistics
+    //   }
+    // },
+    // {
+    //   path: '/collect',
+    //   name: 'collect',
+    //   components: {
+    //     header: header,
+    //     default: collect
+    //   }
+    // }
   ]
 });

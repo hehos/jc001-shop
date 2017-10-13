@@ -17,10 +17,10 @@
         <h1 class="title" v-else>公司名称</h1>
         <div>
           <span class="grade-info" v-if="isLogin">
-            <i class="icon-vip-o ceneral-ico"></i>
+            <i class="ico icon-vip-o ceneral-ico"></i>
             <i><span>VIP会员</span><em>8</em>年</i>
-            <i class="icon-check-circle" style="color: #7ac814;"></i>
-            <i class="icon-rz-firm"></i>
+            <i class="ico icon-check-circle" style="color: #7ac814;"></i>
+            <i class="ico icon-rz-firm"></i>
           </span>
           <span class="no-grade-info" v-else>
             成为VIP会员获取更多权限
@@ -174,7 +174,7 @@
     padding-bottom: 55px;
 
     background-color: $themeBg;
-    & + #footer .mint-tabbar {
+    &  #footer .mint-tabbar {
       color: $gray-light2;
       background-color: darken($themeBg, 5%);
     }
