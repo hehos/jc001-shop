@@ -83,7 +83,7 @@
     data () {
       return {
         popupBoxVisible: false,
-        info: []
+        info: {}
       }
     },
     created () {

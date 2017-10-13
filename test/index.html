@@ -12,6 +12,38 @@
 </head>
 <body>
 
+<a href="#" class="l_img" onmouseover="full(this)" onmouseout="full2()">
+  <div class="index_classic_info">
+    <div class="classic_info_mes">
+      <div class="classic_info_top article-block  ani-view fade-in-down clear">
+        <p class="classic_info_zw">拓展投资</p>
+        <p class="classic_info_yw">INVESTMENT</p>
+      </div>
+      <div class="read_more tranba readmoreclas" >
+        <div class="read_A">READ MORE</div>
+        <div class="read_bg"><p class="read_A1">READ MORE</p></div>
+      </div>
+
+    </div>
+  </div>
+  <font>
+    <span class="it-top"></span>
+    <span class="it-bom"></span>
+    <span class="it-lft"></span>
+    <span class="it-rit"></span>
+  </font>
+  <img src="_USER/img/f01.jpg" />
+</a>
+
+<script>
+  function full(my) {
+    $(my).find('.read_more').removeClass('readmoreclas')
+  }
+  function full2(my) {
+    $(my).find('.read_more').addClass('readmoreclas')
+  }
+</script>
+
 <img style="width: 100%;" src="ddd.jpg" alt="">
 
 

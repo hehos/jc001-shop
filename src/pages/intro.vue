@@ -9,7 +9,7 @@
 
 
     <div class="info-title"><strong>认证信息</strong></div>
-    <div class="margin-b-8 white-bg grade-info">
+    <div class="margin-b-8 white-bg grade-info" style="display: block;">
       <span class="info-item" v-if="vipGrade">
         <i :class="vipGrade.icon" class="ceneral-ico"></i>
         <i class="icon-vip-o ceneral-ico"></i>
